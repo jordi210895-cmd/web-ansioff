@@ -40,6 +40,13 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Monetag Ad Tag */}
+        <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="267458"
+          async
+          data-cfasync="false"
+        />
         {/* Google AdSense direct raw tag */}
         <script
           async
