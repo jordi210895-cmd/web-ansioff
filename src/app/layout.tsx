@@ -18,6 +18,9 @@ export const metadata = {
   verification: {
     google: "iWzifyqtckncXrB80nz_lcA6kOyhmuU7rnPwoxgIwiQ",
   },
+  other: {
+    "google-adsense-account": "ca-pub-4114551490468306",
+  },
   appleWebApp: {
     capable: true,
     title: "ANSIOFF Business",
@@ -37,12 +40,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* Google AdSense */}
-        <Script
+        {/* Google AdSense direct raw tag */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4114551490468306"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
         {/* Google tag (gtag.js) */}
         <Script
