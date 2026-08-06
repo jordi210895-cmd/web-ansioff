@@ -60,6 +60,17 @@ export default function RootLayout({
             gtag('config', 'AW-18311870973');
           `}
         </Script>
+        <Script id="sw-register" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').catch(function(err) {
+                  console.error('Service Worker registration failed:', err);
+                });
+              });
+            }
+          `}
+        </Script>
       </head>
       <body
         className={`${sora.variable} ${dmSans.variable} font-sans antialiased`}
