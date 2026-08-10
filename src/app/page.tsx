@@ -228,8 +228,9 @@ export default function AnsioffPersonalLanding() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6">
               <div className="flex flex-col gap-3">
                 <a 
-                  href="#download" 
-                  onClick={(e) => { e.preventDefault(); scrollTo('download'); }}
+                  href="https://apps.apple.com/es/app/ansioff-ansiedad-y-calma/id6761905804" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] px-8 py-3.5 rounded-xl text-[15px] font-semibold transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5"
                 >
                   <span></span>
@@ -584,7 +585,7 @@ export default function AnsioffPersonalLanding() {
               <p className="text-sm text-[#8ab0cc] mb-6 max-w-[280px]">Haz clic en el enlace inferior para ir directamente a la App Store y descargar ANSIOFF en tu iPhone.</p>
               
               <a 
-                href="https://apps.apple.com/app/ansioff"
+                href="https://apps.apple.com/es/app/ansioff-ansiedad-y-calma/id6761905804"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3.5 rounded-xl bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] text-sm font-bold transition-all flex items-center justify-center gap-2"
