@@ -40,13 +40,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* Monetag Ad Tag */}
-        <script
-          src="https://quge5.com/88/tag.min.js"
-          data-zone="267458"
-          async
-          data-cfasync="false"
-        />
         {/* Google AdSense direct raw tag */}
         <script
           async
@@ -65,17 +58,6 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-18311870973');
-          `}
-        </Script>
-        <Script id="sw-register" strategy="afterInteractive">
-          {`
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').catch(function(err) {
-                  console.error('Service Worker registration failed:', err);
-                });
-              });
-            }
           `}
         </Script>
       </head>
