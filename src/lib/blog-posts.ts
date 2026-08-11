@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "ansiedad-despues-de-comer",
+    category: "Ansiedad y alimentación",
+    keyword: "por qué me da ansiedad después de comer",
+    title: "¿Por qué me da ansiedad después de comer?",
+    seoTitle: "Ansiedad después de comer: causas y qué hacer | ANSIOFF",
+    description:
+      "¿Sientes ansiedad después de comer? Aprende qué puede influir, cómo distinguir otros síntomas, qué registrar, qué hacer y cuándo pedir valoración médica.",
+    excerpt:
+      "Cómo distinguir ansiedad de otras sensaciones después de comer, qué observar sin autodiagnosticarte y cuándo pedir una valoración médica.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "10 min de lectura",
+  },
+  {
     slug: "debilidad-despues-ataque-ansiedad",
     category: "Ansiedad y recuperación",
     keyword: "por qué después de un ataque de ansiedad me siento débil",

@@ -419,10 +419,10 @@ export default function AnxietyPalpitationsArticle() {
                 text: "Diferencia cansancio general de una pérdida de fuerza que necesita atención.",
               },
               {
-                href: "/blog/ansiedad-por-la-noche",
-                label: "Ansiedad y sueño",
-                title: "Qué hacer si la ansiedad aparece por la noche",
-                text: "Distingue una rutina de calma de una señal que necesita valoración.",
+                href: "/blog/ansiedad-despues-de-comer",
+                label: "Ansiedad y alimentación",
+                title: "Por qué aparece ansiedad después de comer",
+                text: "Distingue una crisis de ansiedad de otras sensaciones que necesitan valoración.",
               },
               {
                 href: "/blog/diario-emocional-ejemplo",

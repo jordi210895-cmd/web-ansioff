@@ -164,6 +164,22 @@ Las dos consultas se validaron como coincidencias exactas en Google Keyword Plan
 
 URL incorporada: `/blog/debilidad-despues-ataque-ansiedad`
 
+## Undécimo artículo seleccionado
+
+| Consulta de cola larga | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| porque me da ansiedad despues de comer | 10 | Baja | Keyword principal exacta, H1, respuesta inicial y explicación de posibles factores |
+| despues de comer me da ansiedad | 10 | Baja | Variante conversacional de la intención principal |
+| ataques de ansiedad después de comer | 10 | Sin especificar | Diferencia entre un episodio de pánico y otros síntomas físicos |
+| síntomas de ansiedad después de comer | 10 | Sin especificar | Bloque de observación y preguntas frecuentes |
+| mareo y ansiedad después de comer | 10 | Baja | Seguridad, causas que no deben autodiagnosticarse y cuándo consultar |
+| mucha ansiedad después de comer | 10 | Baja | Pauta inmediata y consulta si se repite o condiciona las comidas |
+| nerviosismo despues de comer | 10 | Baja | Variante secundaria natural en la introducción |
+
+Las siete consultas se validaron como coincidencias exactas en Google Keyword Planner para España, idioma español y promedio de los últimos 12 meses. El artículo cubre una intención posprandial específica y evita competir con la guía general sobre síntomas físicos.
+
+URL incorporada: `/blog/ansiedad-despues-de-comer`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |

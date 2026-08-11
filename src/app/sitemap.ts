@@ -10,6 +10,7 @@ const routes = [
   "/kit-sos-ansiedad",
   "/blog",
   "/blog/ansiedad-al-despertar",
+  "/blog/ansiedad-despues-de-comer",
   "/blog/ansiedad-por-la-noche",
   "/blog/diario-emocional-ejemplo",
   "/blog/debilidad-despues-ataque-ansiedad",
