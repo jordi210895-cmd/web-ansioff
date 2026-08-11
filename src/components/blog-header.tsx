@@ -4,15 +4,10 @@ import AppStoreLink from "@/components/app-store-link";
 export default function BlogHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#0e2a4a] bg-[#04152b]/95 backdrop-blur-md">
-      <nav aria-label="Navegación del blog" className="mx-auto flex max-w-6xl items-center justify-between gap-5 px-6 py-4">
-        <div className="flex items-center gap-6">
-          <Link href="/" className="font-sora text-lg font-semibold tracking-tight">
-            ANSI<span className="text-[#14b8a6]">OFF</span>
-          </Link>
-          <Link href="/blog" className="text-sm font-semibold text-[#e8f4ff]">
-            Blog
-          </Link>
-        </div>
+      <nav aria-label="Navegación principal" className="mx-auto flex max-w-6xl items-center justify-between gap-5 px-6 py-4">
+        <Link href="/" className="font-sora text-lg font-semibold tracking-tight">
+          ANSI<span className="text-[#14b8a6]">OFF</span>
+        </Link>
 
         <div className="flex items-center gap-4">
           <Link href="/app-para-la-ansiedad" className="hidden text-sm text-[#8ab0cc] hover:text-[#e8f4ff] sm:inline">
