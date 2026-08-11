@@ -8,6 +8,8 @@ const routes = [
   "/diario-emocional",
   "/sonidos-relajantes",
   "/kit-sos-ansiedad",
+  "/blog",
+  "/blog/ansiedad-por-la-noche",
   "/business",
   "/business/salud-mental-en-el-trabajo",
   "/business/bienestar-laboral",
@@ -26,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `https://ansioff.com${route || "/"}`,
     lastModified,
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route === "/business" ? 0.9 : 0.7,
+    changeFrequency: route === "" || route === "/blog" ? "weekly" : "monthly",
+    priority: route === "" ? 1 : route === "/business" ? 0.9 : route === "/blog" ? 0.8 : 0.7,
   }));
 }

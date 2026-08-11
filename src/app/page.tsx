@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AppStoreLink from "@/components/app-store-link";
+import SiteFooter from "@/components/site-footer";
 
 type TabId = "sos" | "diario" | "audios" | "programas";
 
@@ -682,18 +683,7 @@ export default function AnsioffPersonalLanding() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-[#020e1c] py-8 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4 border-t border-[#0e2a4a]">
-        <div className="font-sora text-[15px] text-[#5a7a94]">
-          ANSI<span className="text-[#14b8a6]">OFF</span> Personal
-        </div>
-        <div className="text-[12px] text-[#2d4a61] flex flex-wrap justify-center gap-4">
-          <span>© 2026 ANSIOFF</span>
-          <Link href="/privacy" className="hover:text-[#5a7a94]">Política de privacidad</Link>
-          <Link href="/legal" className="hover:text-[#5a7a94]">Aviso legal</Link>
-          <Link href="/terms" className="hover:text-[#5a7a94]">Términos de servicio</Link>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

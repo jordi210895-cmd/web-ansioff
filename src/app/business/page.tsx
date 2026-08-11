@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import SiteFooter from "@/components/site-footer";
 
 export default function AnsioffBusinessLanding() {
   const router = useRouter();
@@ -435,16 +436,7 @@ export default function AnsioffBusinessLanding() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-[#020e1c] py-8 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4 border-t border-[#0e2a4a]">
-        <div className="font-sora text-[15px] text-[#2d4a61]">ANSIOFF Business</div>
-        <div className="text-[12px] text-[#2d4a61] flex flex-wrap justify-center gap-4">
-          <span>© 2026 ANSIOFF</span>
-          <Link href="/privacy" className="hover:text-[#5a7a94]">Política de privacidad</Link>
-          <Link href="/legal" className="hover:text-[#5a7a94]">Aviso legal</Link>
-          <Link href="/terms" className="hover:text-[#5a7a94]">Términos de servicio</Link>
-        </div>
-      </footer>
+      <SiteFooter section="Business" />
     </div>
   );
 }
