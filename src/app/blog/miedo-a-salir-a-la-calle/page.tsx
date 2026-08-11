@@ -409,10 +409,10 @@ export default function FearOfGoingOutsideArticle() {
                 text: "Registra situación, emoción, pensamiento y respuesta después de una salida.",
               },
               {
-                href: "/blog/ansiedad-al-despertar",
-                label: "Ansiedad y rutinas",
-                title: "Qué hacer si te despiertas con ansiedad",
-                text: "Una rutina breve para los primeros minutos y señales que conviene consultar.",
+                href: "/blog/miedo-a-conducir",
+                label: "Ansiedad y conducción",
+                title: "Cómo afrontar el miedo a conducir",
+                text: "Prepara una jerarquía específica sin descuidar la seguridad vial.",
               },
               {
                 href: "/blog/ansiedad-por-la-noche",

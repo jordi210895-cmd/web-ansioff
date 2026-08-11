@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "miedo-a-conducir",
+    category: "Ansiedad y conducción",
+    keyword: "miedo a conducir",
+    title: "Miedo a conducir: cómo afrontarlo paso a paso con seguridad",
+    seoTitle: "Miedo a conducir: cómo afrontarlo paso a paso | ANSIOFF",
+    description:
+      "¿Te da miedo conducir? Identifica qué activa la ansiedad, crea una jerarquía gradual y practica paso a paso con seguridad, incluida la conducción por autopista.",
+    excerpt:
+      "Una guía para identificar situaciones temidas, preparar prácticas graduales y saber qué hacer si aparece ansiedad al volante sin descuidar la seguridad vial.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "10 min de lectura",
+  },
+  {
     slug: "que-decir-a-persona-con-ansiedad",
     category: "Apoyo y ansiedad",
     keyword: "qué decirle a una persona con ansiedad",

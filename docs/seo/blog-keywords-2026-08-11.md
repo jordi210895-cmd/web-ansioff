@@ -115,6 +115,25 @@ URL incorporada: `/blog/respiracion-para-dormir`
 
 URL incorporada: `/blog/que-decir-a-persona-con-ansiedad`
 
+## Octavo artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| miedo a conducir | 880 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| fobia a conducir | 480 | Baja | Diferencia entre miedo puntual y posible fobia |
+| miedo a conducir nombre | 140 | Baja | Explicación prudente del término amaxofobia |
+| ansiedad al conducir | 90 | Baja | Señales y protocolo de seguridad al volante |
+| perder el miedo a conducir | 50 | Media | Jerarquía gradual sin prometer un resultado rápido |
+| ansiedad al conducir por autopista | 40 | Baja | Plan específico para autovía y autopista |
+| miedo a conducir en autopista | 40 | Baja | Pasos con instructor y rutas de una sola salida |
+| miedo a conducir sola | 40 | Baja | Reducción progresiva del acompañamiento |
+| me da miedo conducir | 30 | Baja | Apertura y preguntas frecuentes |
+| miedo a conducir por autovía | 20 | Baja | Variante secundaria de la sección de vías rápidas |
+| ataques de ansiedad al conducir | 10 | Baja | Seguridad, detención permitida y valoración profesional |
+| tengo el carnet pero me da miedo conducir | 10 | Baja | Clases de actualización y práctica acompañada |
+
+URL incorporada: `/blog/miedo-a-conducir`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
