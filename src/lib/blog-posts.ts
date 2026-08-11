@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "debilidad-despues-ataque-ansiedad",
+    category: "Ansiedad y recuperación",
+    keyword: "por qué después de un ataque de ansiedad me siento débil",
+    title: "¿Por qué después de un ataque de ansiedad me siento débil?",
+    seoTitle: "Debilidad después de un ataque de ansiedad | ANSIOFF",
+    description:
+      "¿Te sientes débil después de un ataque de ansiedad? Descubre posibles motivos, qué hacer durante la recuperación y qué señales requieren valoración médica.",
+    excerpt:
+      "Qué puede influir en el cansancio después de un ataque de ansiedad, cómo recuperarte con prudencia y qué tipo de debilidad requiere atención médica.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "10 min de lectura",
+  },
+  {
     slug: "palpitaciones-por-ansiedad",
     category: "Ansiedad y síntomas físicos",
     keyword: "palpitaciones por ansiedad",

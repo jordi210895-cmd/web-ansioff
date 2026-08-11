@@ -153,6 +153,17 @@ URL incorporada: `/blog/miedo-a-conducir`
 
 URL incorporada: `/blog/palpitaciones-por-ansiedad`
 
+## Décimo artículo seleccionado
+
+| Consulta de cola larga | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| porque despues de un ataque de ansiedad me siento debil | 10 | Sin especificar | Keyword principal exacta, H1, respuesta inicial y explicación de la recuperación |
+| cansancio después de un ataque de ansiedad | 10 | Baja | Variante secundaria para diferenciar cansancio general y pérdida real de fuerza |
+
+Las dos consultas se validaron como coincidencias exactas en Google Keyword Planner para España, idioma español y promedio de los últimos 12 meses. El artículo responde a una duda de nueve palabras sin competir con la guía general sobre palpitaciones.
+
+URL incorporada: `/blog/debilidad-despues-ataque-ansiedad`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |

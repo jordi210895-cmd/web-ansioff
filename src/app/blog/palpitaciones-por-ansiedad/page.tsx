@@ -413,10 +413,10 @@ export default function AnxietyPalpitationsArticle() {
           <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                href: "/blog/ansiedad-al-despertar",
-                label: "Ansiedad y rutinas",
-                title: "Qué hacer si te despiertas con ansiedad",
-                text: "Una rutina breve y señales matutinas que conviene consultar.",
+                href: "/blog/debilidad-despues-ataque-ansiedad",
+                label: "Ansiedad y recuperación",
+                title: "Por qué puedes sentirte débil después",
+                text: "Diferencia cansancio general de una pérdida de fuerza que necesita atención.",
               },
               {
                 href: "/blog/ansiedad-por-la-noche",
