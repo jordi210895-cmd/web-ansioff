@@ -347,8 +347,14 @@ export default function AnxietyAtNightArticle() {
         <div className="mx-auto max-w-5xl">
           <p className="font-sora text-xs font-bold uppercase tracking-[2px] text-[#14b8a6]">SIGUE APRENDIENDO</p>
           <h2 id="articulos-relacionados" className="mt-3 font-sora text-3xl font-semibold">Artículos relacionados</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {[
+              {
+                href: "/blog/ansiedad-al-despertar",
+                label: "Ansiedad y rutinas",
+                title: "Qué hacer si te despiertas con ansiedad",
+                text: "Una rutina breve para los primeros minutos y señales que conviene consultar.",
+              },
               {
                 href: "/respiracion-para-la-ansiedad",
                 label: "Respiración",

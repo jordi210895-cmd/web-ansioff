@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "ansiedad-al-despertar",
+    category: "Ansiedad y rutinas",
+    keyword: "ansiedad al despertar",
+    title: "Ansiedad al despertar: por qué aparece y qué hacer por la mañana",
+    seoTitle: "Ansiedad al despertar: causas y qué hacer | ANSIOFF",
+    description:
+      "¿Te despiertas con ansiedad? Conoce qué puede influir, qué hacer durante los primeros minutos y cuándo conviene consultar a un profesional.",
+    excerpt:
+      "Qué puede influir en la ansiedad matutina, una rutina breve para los primeros minutos y señales que conviene consultar.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "9 min de lectura",
+  },
+  {
     slug: "ansiedad-por-la-noche",
     category: "Ansiedad y sueño",
     keyword: "ansiedad por la noche",

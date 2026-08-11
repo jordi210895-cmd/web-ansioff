@@ -22,11 +22,25 @@ Fuente: Google Ads Keyword Planner API, red de Búsqueda de Google, media mensua
 
 URL publicada: `/blog/ansiedad-por-la-noche`
 
+## Segundo artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| ansiedad al despertar | 320 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| ansiedad por la mañana | 140 | Baja | Variante secundaria y explicación |
+| ansiedad al despertar síntomas | 90 | Baja | Bloque de señales frecuentes |
+| me despierto con ansiedad | 70 | Baja | Apertura y FAQ |
+| por qué me despierto con ansiedad | 50 | Baja | Intención explicativa y FAQ |
+| ansiedad al despertar qué hacer | 30 | Alta | Rutina práctica de los primeros minutos |
+| ansiedad al despertar causas | 10 | Baja | Posibles factores sin autodiagnóstico |
+| ansiedad despertar con taquicardia | 10 | Baja | Seguridad y cuándo consultar |
+
+URL incorporada: `/blog/ansiedad-al-despertar`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
 |---|---|---:|---|
-| Ansiedad al despertar | ansiedad al despertar | 320 | Causas posibles, primeros pasos y cuándo consultar |
 | Respiración y sueño | respiración para dormir | 720 | Comparar ritmos y crear una rutina nocturna; enlazar a 4-7-8 |
 | Técnica de anclaje | técnica 5 4 3 2 1 ansiedad | 40 | Guía sensorial exacta, ejemplos y límites |
 | Ejemplo de diario | diario emocional ejemplo | 30 | Plantilla práctica y ejemplo no clínico |

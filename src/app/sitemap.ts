@@ -9,6 +9,7 @@ const routes = [
   "/sonidos-relajantes",
   "/kit-sos-ansiedad",
   "/blog",
+  "/blog/ansiedad-al-despertar",
   "/blog/ansiedad-por-la-noche",
   "/business",
   "/business/salud-mental-en-el-trabajo",
