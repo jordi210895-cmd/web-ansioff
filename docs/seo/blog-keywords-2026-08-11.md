@@ -82,11 +82,27 @@ URL incorporada: `/blog/diario-emocional-ejemplo`
 
 URL incorporada: `/blog/miedo-a-salir-a-la-calle`
 
+## Sexto artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| respiración para dormir | 720 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| ejercicios de respiración para dormir | 140 | Baja | Comparativa de tres ejercicios adaptables |
+| tecnica respiracion dormir | 140 | Baja | Variante secundaria en explicación y FAQ |
+| tecnicas respiracion dormir | 140 | Baja | Variante secundaria natural |
+| respiracion militar para dormir | 110 | Baja | FAQ que evita presentar un método viral como protocolo clínico |
+| respiracion para dormir rapido | 70 | Baja | Respuesta sin prometer sueño inmediato |
+| tecnica respiracion para dormir | 50 | Baja | Rutina práctica antes de acostarse |
+| metodo de respiracion para dormir | 30 | Baja | Criterios para elegir un ritmo cómodo |
+| respiración 4 7 8 peligrosa | 30 | Baja | Límites, mareo y retención del aire |
+| como respirar para dormir | 20 | Baja | Instrucciones paso a paso |
+
+URL incorporada: `/blog/respiracion-para-dormir`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
 |---|---|---:|---|
-| Respiración y sueño | respiración para dormir | 720 | Comparar ritmos y crear una rutina nocturna; enlazar a 4-7-8 |
 | Ansiedad nocturna | remedios para la ansiedad nocturna | 50 | Reformular como hábitos y recursos; evitar promesas de “remedios” |
 | Ansiedad e insomnio | ansiedad e insomnio qué hacer | 20 | Cuándo es puntual, rutina y consulta profesional |
 

@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "respiracion-para-dormir",
+    category: "Respiración y sueño",
+    keyword: "respiración para dormir",
+    title: "Respiración para dormir: 3 ejercicios y una rutina breve",
+    seoTitle: "Respiración para dormir: 3 ejercicios guiados | ANSIOFF",
+    description:
+      "Prueba tres ejercicios de respiración para dormir sin forzar el aire, aprende cuál elegir y crea una rutina nocturna breve antes de acostarte paso a paso.",
+    excerpt:
+      "Tres ritmos de respiración adaptables, criterios para elegir uno y una rutina nocturna sin prometer que te dormirás de inmediato.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "9 min de lectura",
+  },
+  {
     slug: "miedo-a-salir-a-la-calle",
     category: "Ansiedad y exposición",
     keyword: "miedo a salir a la calle",

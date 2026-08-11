@@ -13,6 +13,7 @@ const routes = [
   "/blog/ansiedad-por-la-noche",
   "/blog/diario-emocional-ejemplo",
   "/blog/miedo-a-salir-a-la-calle",
+  "/blog/respiracion-para-dormir",
   "/blog/tecnica-5-4-3-2-1-ansiedad",
   "/business",
   "/business/salud-mental-en-el-trabajo",

@@ -356,10 +356,10 @@ export default function AnxietyAtNightArticle() {
                 text: "Una rutina breve para los primeros minutos y señales que conviene consultar.",
               },
               {
-                href: "/respiracion-para-la-ansiedad",
-                label: "Respiración",
-                title: "Ejercicios de respiración para la ansiedad",
-                text: "Una guía visual para practicar sin forzar el aire ni los tiempos.",
+                href: "/blog/respiracion-para-dormir",
+                label: "Respiración y sueño",
+                title: "Tres ejercicios de respiración para dormir",
+                text: "Compara ritmos cómodos y prepara una rutina breve antes de acostarte.",
               },
               {
                 href: "/blog/tecnica-5-4-3-2-1-ansiedad",
