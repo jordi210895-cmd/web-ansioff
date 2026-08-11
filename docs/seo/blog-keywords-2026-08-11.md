@@ -99,6 +99,22 @@ URL incorporada: `/blog/miedo-a-salir-a-la-calle`
 
 URL incorporada: `/blog/respiracion-para-dormir`
 
+## Séptimo artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| que decirle a una persona con ansiedad | 90 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| que decirle a una persona con ansiedad a distancia | 90 | Baja | Sección específica para mensajes y llamadas |
+| que no decir a una persona con ansiedad | 50 | Baja | Tabla de frases que invalidan y alternativas |
+| como ayudar a mi pareja con ansiedad | 20 | Baja | Límites, consentimiento y apoyo continuado |
+| cómo ayudar a una persona con ataques de ansiedad | 20 | Baja | Protocolo prudente durante una crisis |
+| como actuar ante un ataque de ansiedad de otra persona | 10 | Baja | Pasos de seguridad y cuándo llamar al 112 |
+| que decir cuando alguien tiene ansiedad | 10 | Baja | Frases breves y preguntas abiertas |
+| que decirle a una persona con un ataque de ansiedad | 10 | Baja | Acompañamiento durante el pico de malestar |
+| cosas que no decirle a una persona con ansiedad | 10 | Alta | Errores frecuentes sin culpabilizar a quien ayuda |
+
+URL incorporada: `/blog/que-decir-a-persona-con-ansiedad`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |

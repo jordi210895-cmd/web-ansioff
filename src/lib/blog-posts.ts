@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "que-decir-a-persona-con-ansiedad",
+    category: "Apoyo y ansiedad",
+    keyword: "qué decirle a una persona con ansiedad",
+    title: "Qué decirle a una persona con ansiedad: frases que ayudan y qué evitar",
+    seoTitle: "Qué decirle a una persona con ansiedad: guía | ANSIOFF",
+    description:
+      "Encuentra frases para acompañar a una persona con ansiedad, qué evitar, cómo ayudar a distancia y qué hacer paso a paso ante una crisis o posible emergencia.",
+    excerpt:
+      "Frases concretas para escuchar y validar, qué conviene evitar y cómo acompañar en persona o a distancia sin intentar hacer de terapeuta.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "9 min de lectura",
+  },
+  {
     slug: "respiracion-para-dormir",
     category: "Respiración y sueño",
     keyword: "respiración para dormir",

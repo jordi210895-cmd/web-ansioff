@@ -384,10 +384,10 @@ export default function Grounding54321Article() {
                 text: "Aprende qué escribir con una entrada completa y una plantilla reutilizable.",
               },
               {
-                href: "/blog/ansiedad-al-despertar",
-                label: "Ansiedad y rutinas",
-                title: "Qué hacer si te despiertas con ansiedad",
-                text: "Una rutina breve para los primeros minutos y señales que conviene consultar.",
+                href: "/blog/que-decir-a-persona-con-ansiedad",
+                label: "Apoyo y ansiedad",
+                title: "Qué decirle a una persona con ansiedad",
+                text: "Frases que ayudan, qué evitar y cómo acompañar durante una crisis.",
               },
               {
                 href: "/blog/ansiedad-por-la-noche",
