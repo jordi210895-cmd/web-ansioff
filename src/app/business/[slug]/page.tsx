@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import SiteFooter from "@/components/site-footer";
 import {
   businessSeoPages,
   businessSeoSlugs,
@@ -223,14 +224,7 @@ export default async function BusinessSeoLanding({ params }: PageProps) {
         </Link>
       </section>
 
-      <footer className="flex flex-wrap items-center justify-between gap-4 border-t border-[#0e2a4a] px-6 py-8 text-xs text-[#5a7a94] md:px-12">
-        <span>© 2026 ANSIOFF Business</span>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/privacy">Privacidad</Link>
-          <Link href="/legal">Aviso legal</Link>
-          <Link href="/terms">Términos</Link>
-        </div>
-      </footer>
+      <SiteFooter section="Business" />
     </main>
   );
 }
