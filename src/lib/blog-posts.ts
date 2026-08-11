@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "tecnica-5-4-3-2-1-ansiedad",
+    category: "Técnicas de anclaje",
+    keyword: "técnica 5 4 3 2 1 ansiedad",
+    title: "Técnica 5-4-3-2-1 para la ansiedad: cómo hacerla paso a paso",
+    seoTitle: "Técnica 5-4-3-2-1 para la ansiedad | ANSIOFF",
+    description:
+      "Aprende cómo hacer la técnica 5-4-3-2-1 para volver al presente, cómo adaptarla y qué límites tiene cuando aparece la ansiedad.",
+    excerpt:
+      "Una guía práctica de grounding con los cinco sentidos, ejemplos reales, adaptaciones y límites responsables.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "8 min de lectura",
+  },
+  {
     slug: "ansiedad-al-despertar",
     category: "Ansiedad y rutinas",
     keyword: "ansiedad al despertar",

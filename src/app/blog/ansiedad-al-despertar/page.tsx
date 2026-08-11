@@ -378,8 +378,14 @@ export default function AnxietyOnWakingArticle() {
         <div className="mx-auto max-w-5xl">
           <p className="font-sora text-xs font-bold uppercase tracking-[2px] text-[#14b8a6]">SIGUE APRENDIENDO</p>
           <h2 id="articulos-relacionados" className="mt-3 font-sora text-3xl font-semibold">Artículos relacionados</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {[
+              {
+                href: "/blog/tecnica-5-4-3-2-1-ansiedad",
+                label: "Técnicas de anclaje",
+                title: "Cómo hacer la técnica 5-4-3-2-1",
+                text: "Vuelve al presente con los cinco sentidos y aprende a adaptar cada paso.",
+              },
               {
                 href: "/blog/ansiedad-por-la-noche",
                 label: "Ansiedad y sueño",

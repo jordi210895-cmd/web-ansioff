@@ -362,10 +362,10 @@ export default function AnxietyAtNightArticle() {
                 text: "Una guía visual para practicar sin forzar el aire ni los tiempos.",
               },
               {
-                href: "/respiracion-4-7-8",
-                label: "Paso a paso",
-                title: "Cómo hacer la respiración 4-7-8",
-                text: "Conoce cada fase y qué hacer si mantener el aire resulta incómodo.",
+                href: "/blog/tecnica-5-4-3-2-1-ansiedad",
+                label: "Técnicas de anclaje",
+                title: "Cómo hacer la técnica 5-4-3-2-1",
+                text: "Vuelve al presente con los cinco sentidos y aprende a adaptar cada paso.",
               },
               {
                 href: "/diario-emocional",

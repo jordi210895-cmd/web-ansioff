@@ -11,6 +11,7 @@ const routes = [
   "/blog",
   "/blog/ansiedad-al-despertar",
   "/blog/ansiedad-por-la-noche",
+  "/blog/tecnica-5-4-3-2-1-ansiedad",
   "/business",
   "/business/salud-mental-en-el-trabajo",
   "/business/bienestar-laboral",

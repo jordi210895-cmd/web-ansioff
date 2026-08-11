@@ -37,12 +37,26 @@ URL publicada: `/blog/ansiedad-por-la-noche`
 
 URL incorporada: `/blog/ansiedad-al-despertar`
 
+## Tercer artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| técnica 5 4 3 2 1 ansiedad | 40 | Baja | Keyword principal, URL, title, H1 y explicación paso a paso |
+| grounding ansiedad | 20 | Media | Definición de grounding y variante secundaria |
+| técnica ansiedad 5 4 3 2 1 | 20 | Baja | Variante secundaria natural |
+| técnica 5 sentidos ansiedad | 20 | Baja | Explicación sensorial |
+| ejercicio 5 sentidos ansiedad | 10 | Baja | Ejemplo completo |
+| grounding para la ansiedad | 10 | Baja | Límites y uso práctico |
+| técnica 54321 para ansiedad | 10 | Baja | Variante escrita sin separadores |
+| técnica de los 5 sentidos para la ansiedad | 10 | Baja | FAQ y adaptación |
+
+URL incorporada: `/blog/tecnica-5-4-3-2-1-ansiedad`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
 |---|---|---:|---|
 | Respiración y sueño | respiración para dormir | 720 | Comparar ritmos y crear una rutina nocturna; enlazar a 4-7-8 |
-| Técnica de anclaje | técnica 5 4 3 2 1 ansiedad | 40 | Guía sensorial exacta, ejemplos y límites |
 | Ejemplo de diario | diario emocional ejemplo | 30 | Plantilla práctica y ejemplo no clínico |
 | Miedo a salir | miedo a salir de casa por ansiedad | 70 | Primeros pasos y exposición gradual sin sustituir terapia |
 | Ansiedad nocturna | remedios para la ansiedad nocturna | 50 | Reformular como hábitos y recursos; evitar promesas de “remedios” |
