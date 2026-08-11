@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "miedo-a-salir-a-la-calle",
+    category: "Ansiedad y exposición",
+    keyword: "miedo a salir a la calle",
+    title: "Miedo a salir a la calle: qué hacer paso a paso si aparece ansiedad",
+    seoTitle: "Miedo a salir a la calle: qué hacer | ANSIOFF",
+    description:
+      "¿Te da miedo salir a la calle? Entiende el ciclo de evitación y prepara primeros pasos graduales, con un ejemplo de jerarquía y señales para pedir ayuda.",
+    excerpt:
+      "Cómo entender el miedo, crear una jerarquía gradual y preparar una primera salida sin exigirte que la ansiedad desaparezca.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "10 min de lectura",
+  },
+  {
     slug: "diario-emocional-ejemplo",
     category: "Diario emocional",
     keyword: "diario emocional ejemplo",

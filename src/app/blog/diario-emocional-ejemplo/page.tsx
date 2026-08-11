@@ -383,8 +383,14 @@ export default function EmotionalJournalExampleArticle() {
         <div className="mx-auto max-w-5xl">
           <p className="font-sora text-xs font-bold uppercase tracking-[2px] text-[#14b8a6]">SIGUE APRENDIENDO</p>
           <h2 id="articulos-relacionados" className="mt-3 font-sora text-3xl font-semibold">Artículos relacionados</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {[
+              {
+                href: "/blog/miedo-a-salir-a-la-calle",
+                label: "Ansiedad y exposición",
+                title: "Qué hacer si te da miedo salir a la calle",
+                text: "Crea una jerarquía gradual y prepara un primer paso que puedas repetir.",
+              },
               {
                 href: "/blog/ansiedad-al-despertar",
                 label: "Ansiedad y rutinas",

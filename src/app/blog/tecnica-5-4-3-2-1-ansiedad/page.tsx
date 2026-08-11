@@ -396,10 +396,10 @@ export default function Grounding54321Article() {
                 text: "Un plan para bajar la activación y salir del bucle de preocupación al acostarte.",
               },
               {
-                href: "/respiracion-para-la-ansiedad",
-                label: "Respiración",
-                title: "Ejercicios de respiración para la ansiedad",
-                text: "Una guía visual para practicar sin forzar el aire ni los tiempos.",
+                href: "/blog/miedo-a-salir-a-la-calle",
+                label: "Ansiedad y exposición",
+                title: "Qué hacer si te da miedo salir a la calle",
+                text: "Prepara un primer paso gradual y aprende a revisar lo que ocurrió después.",
               },
             ].map((related) => (
               <Link key={related.href} href={related.href} className="rounded-2xl border border-[#0e2a4a] bg-[#020e1c] p-6 hover:border-[#14b8a6]/50">

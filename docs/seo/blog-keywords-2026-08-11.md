@@ -67,12 +67,26 @@ URL incorporada: `/blog/tecnica-5-4-3-2-1-ansiedad`
 
 URL incorporada: `/blog/diario-emocional-ejemplo`
 
+## Quinto artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| miedo a salir a la calle | 210 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| fobia a salir de la casa | 260 | Baja | Explicación sobre lenguaje común frente a diagnóstico clínico |
+| fobia a salir a la calle | 90 | Baja | Variante secundaria y FAQ |
+| miedo a salir de casa por ansiedad | 70 | Baja | Contexto del ciclo de evitación y apertura |
+| miedo a salir a la calle sola | 70 | Baja | Preparación de salidas con y sin acompañamiento |
+| ansiedad al salir a la calle | 20 | Baja | Señales físicas y plan para el momento de salir |
+| como superar el miedo a salir a la calle | 10 | Baja | Jerarquía y pasos graduales sin promesas rápidas |
+| por que me da ansiedad salir de casa | 10 | Baja | Posibles explicaciones sin autodiagnóstico |
+
+URL incorporada: `/blog/miedo-a-salir-a-la-calle`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
 |---|---|---:|---|
 | Respiración y sueño | respiración para dormir | 720 | Comparar ritmos y crear una rutina nocturna; enlazar a 4-7-8 |
-| Miedo a salir | miedo a salir de casa por ansiedad | 70 | Primeros pasos y exposición gradual sin sustituir terapia |
 | Ansiedad nocturna | remedios para la ansiedad nocturna | 50 | Reformular como hábitos y recursos; evitar promesas de “remedios” |
 | Ansiedad e insomnio | ansiedad e insomnio qué hacer | 20 | Cuándo es puntual, rutina y consulta profesional |
 
