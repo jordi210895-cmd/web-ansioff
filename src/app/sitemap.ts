@@ -14,6 +14,7 @@ const routes = [
   "/blog/diario-emocional-ejemplo",
   "/blog/miedo-a-conducir",
   "/blog/miedo-a-salir-a-la-calle",
+  "/blog/palpitaciones-por-ansiedad",
   "/blog/que-decir-a-persona-con-ansiedad",
   "/blog/respiracion-para-dormir",
   "/blog/tecnica-5-4-3-2-1-ansiedad",

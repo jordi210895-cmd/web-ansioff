@@ -393,10 +393,10 @@ export default function AnxietyOnWakingArticle() {
                 text: "Un plan para bajar la activación y salir del bucle de preocupación al acostarte.",
               },
               {
-                href: "/respiracion-para-la-ansiedad",
-                label: "Respiración",
-                title: "Ejercicios de respiración para la ansiedad",
-                text: "Una guía visual para practicar sin forzar el aire ni los tiempos.",
+                href: "/blog/palpitaciones-por-ansiedad",
+                label: "Ansiedad y síntomas físicos",
+                title: "Qué hacer ante palpitaciones por ansiedad",
+                text: "Distingue autocuidado, valoración médica y señales de urgencia.",
               },
               {
                 href: "/blog/diario-emocional-ejemplo",

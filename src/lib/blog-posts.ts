@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "palpitaciones-por-ansiedad",
+    category: "Ansiedad y síntomas físicos",
+    keyword: "palpitaciones por ansiedad",
+    title: "Palpitaciones por ansiedad: qué hacer y cuándo consultar",
+    seoTitle: "Palpitaciones por ansiedad: señales y qué hacer | ANSIOFF",
+    description:
+      "¿Notas palpitaciones por ansiedad? Aprende qué pueden indicar, qué hacer con prudencia, qué registrar y cuándo pedir valoración médica o llamar al 112.",
+    excerpt:
+      "Cómo responder a las palpitaciones con prudencia, registrar información útil y reconocer las señales que requieren valoración médica o ayuda urgente.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "9 min de lectura",
+  },
+  {
     slug: "miedo-a-conducir",
     category: "Ansiedad y conducción",
     keyword: "miedo a conducir",

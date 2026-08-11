@@ -134,6 +134,25 @@ URL incorporada: `/blog/que-decir-a-persona-con-ansiedad`
 
 URL incorporada: `/blog/miedo-a-conducir`
 
+## Noveno artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| palpitaciones por ansiedad | 390 | Baja | Keyword principal, URL, title, H1 y respuesta inicial |
+| la ansiedad produce taquicardia | 30 | Baja | Explicación sobre activación y límites del autodiagnóstico |
+| palpitaciones por estres | 30 | Baja | Variante secundaria y desencadenantes frecuentes |
+| ansiedad corazon acelerado | 20 | Baja | Diferencia entre sensación, frecuencia y ritmo |
+| estrés y palpitaciones | 20 | Baja | Ciclo de atención, preocupación y activación |
+| calmar palpitaciones por ansiedad | 10 | Baja | Pasos prudentes después de descartar señales de alarma |
+| palpitaciones por ansiedad que hacer | 10 | Sin especificar | Respuesta práctica y toma de decisiones |
+| palpitaciones por ansiedad todo el día | 10 | Baja | Cuándo solicitar valoración médica |
+| palpitaciones nocturnas ansiedad | 10 | Baja | Registro del episodio sin atribuirlo automáticamente a ansiedad |
+| síntomas de palpitaciones por ansiedad | 10 | Baja | Sensaciones posibles y diagnósticos que no pueden hacerse en casa |
+| palpitaciones y mareos por ansiedad | 10 | Baja | Señales para consulta y posible atención urgente |
+| por qué la ansiedad acelera el corazon | 10 | Sin especificar | Respuesta breve sobre la respuesta de alerta |
+
+URL incorporada: `/blog/palpitaciones-por-ansiedad`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
