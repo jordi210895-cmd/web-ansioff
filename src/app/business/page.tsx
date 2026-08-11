@@ -50,6 +50,29 @@ export default function AnsioffBusinessLanding() {
 
   return (
     <div className="bg-[#020e1c] text-[#e8f4ff] font-sans leading-relaxed selection:bg-[#3b8ee8]/30 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "ANSIOFF Business",
+            serviceType: "Plataforma de bienestar laboral para empresas",
+            provider: {
+              "@type": "Organization",
+              name: "ANSIOFF",
+              url: "https://ansioff.com",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "España",
+            },
+            url: "https://ansioff.com/business",
+            description:
+              "Plataforma de salud mental en el trabajo con recursos para empleados y métricas agregadas para RRHH.",
+          }),
+        }}
+      />
       {/* NAV */}
       <nav className="flex items-center justify-between px-6 md:px-12 py-4 bg-[#04152b] border-b border-[#0e2a4a] sticky top-0 z-[100]">
         <div className="flex items-center gap-4">
@@ -93,26 +116,26 @@ export default function AnsioffBusinessLanding() {
         
         <div className="relative z-10">
           <div className="inline-block bg-[#0c2d4e] text-[#85b7eb] text-[11px] font-medium px-4 py-1.5 rounded-full mb-6 border border-[#185FA5] tracking-[0.8px] font-sora">
-            SALUD MENTAL CORPORATIVA · PLATAFORMA CLÍNICA
+            PLATAFORMA DE BIENESTAR LABORAL PARA EMPRESAS
           </div>
           <h1 className="font-sora text-4xl md:text-5xl lg:text-[48px] font-semibold leading-[1.15] max-w-[680px] mx-auto mb-5">
-            Convierte el bienestar mental en <span className="text-[#3b8ee8]">productividad medible</span>
+            Salud mental en el trabajo con <span className="text-[#3b8ee8]">herramientas para empleados y datos para RRHH</span>
           </h1>
           <p className="text-lg text-[#8ab0cc] max-w-[520px] mx-auto mb-10 leading-[1.65]">
-            La única plataforma que combina terapia clínica real para empleados con un dashboard de ROI para RRHH. Datos, no promesas.
+            ANSIOFF reúne una app de bienestar emocional para el equipo y un panel con métricas agregadas para RRHH. Detecta tendencias, impulsa la adopción y apoya una estrategia de bienestar laboral medible.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button 
               onClick={() => scrollTo('demo')}
               className="bg-[#185FA5] hover:bg-[#3b8ee8] text-[#e6f1fb] px-8 py-3.5 rounded-xl text-[15px] font-medium transition-all hover:-translate-y-0.5"
             >
-              Solicitar demo gratuita
+              Solicitar una demo para mi empresa
             </button>
             <button 
               onClick={() => scrollTo('plataforma')}
               className="bg-transparent border border-[#1e3d5c] hover:border-[#185FA5] text-[#8ab0cc] hover:text-[#e8f4ff] px-8 py-3.5 rounded-xl text-[15px] transition-colors"
             >
-              Ver la plataforma
+              Ver cómo funciona ANSIOFF
             </button>
           </div>
         </div>
@@ -121,10 +144,10 @@ export default function AnsioffBusinessLanding() {
       {/* STATS BAR */}
       <div className="grid grid-cols-2 md:grid-cols-4 bg-[#020e1c] border-b border-[#0e2a4a]">
         {[
-          { n: "€3.200", l: "Coste anual por empleado con ansiedad no tratada" },
-          { n: "23%", l: "Empleados con estrés crónico en España (2024)" },
-          { n: "92%", l: "Eficacia operativa media en empresas ANSIOFF" },
-          { n: "NOM-035", l: "Cumplimiento normativo incluido en todos los planes" },
+          { n: "24/7", l: "Recursos de bienestar disponibles para el equipo" },
+          { n: "Agregados", l: "Datos para RRHH sin exponer notas personales" },
+          { n: "Escalable", l: "Planes según el tamaño de la empresa" },
+          { n: "Privacidad", l: "Seguimiento de adopción y tendencias del equipo" },
         ].map((s, i) => (
           <div key={i} className="p-8 text-center border-r border-[#0e2a4a] last:border-r-0">
             <div className="font-sora text-3xl font-semibold text-[#3b8ee8]">{s.n}</div>
@@ -136,31 +159,31 @@ export default function AnsioffBusinessLanding() {
       {/* PLATAFORMA */}
       <section id="plataforma" className="bg-[#04152b] py-20 px-6 border-b border-[#0e2a4a]">
         <div className="max-w-5xl mx-auto">
-          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">La plataforma</div>
-          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Dos capas. Un solo sistema.</h2>
-          <p className="text-[15px] text-[#5a7a94] mb-12">El empleado trabaja su salud mental. La empresa ve el impacto.</p>
+          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">BIENESTAR LABORAL PARA EMPRESAS</div>
+          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Una experiencia para el empleado y una visión agregada para RRHH</h2>
+          <p className="text-[15px] text-[#5a7a94] mb-12">El equipo accede a herramientas de bienestar desde el móvil. RRHH consulta adopción y tendencias agregadas para orientar sus iniciativas.</p>
           
           <div className="grid md:grid-cols-2 gap-5">
             {/* EMPLEADO */}
             <div className="bg-[#04152b] border border-[#0e2a4a] rounded-2xl p-8">
               <span className="bg-[#0c2d4e] text-[#85b7eb] text-[10px] font-bold px-2.5 py-1 rounded border border-[#185FA5] tracking-[0.5px]">EMPLEADO</span>
-              <h3 className="font-sora text-base font-semibold mt-3 mb-1.5">Portal personal de bienestar</h3>
-              <p className="text-[13px] text-[#5a7a94] mb-4">App propia con acceso a módulos clínicos, planificador y respiración guiada en tiempo real.</p>
+              <h3 className="font-sora text-base font-semibold mt-3 mb-1.5">App de bienestar emocional para empleados</h3>
+              <p className="text-[13px] text-[#5a7a94] mb-4">Acceso móvil a Kit SOS, respiración guiada, diario emocional, sonidos y programas de autocuidado.</p>
               
               <div className="bg-[#020e1c] rounded-xl p-5 mt-4">
                 <div className="text-[10px] font-bold tracking-[1.5px] uppercase text-[#3b8ee8] mb-3">BIENESTAR MENTAL</div>
-                <div className="font-sora text-[26px] font-semibold">8.4 <span className="text-[13px] text-[#97c459] ml-1">+2.1%</span></div>
+                <div className="font-sora text-[20px] font-semibold">Rutina de bienestar</div>
                 <div className="h-1.5 bg-[#0e2a4a] rounded-full mt-2.5 mb-4 overflow-hidden">
-                  <div className="h-full bg-[#185FA5] w-[84%]"></div>
+                  <div className="h-full bg-[#185FA5] w-[72%]"></div>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="bg-[#04152b] rounded-lg p-3">
-                    <div className="text-[10px] text-[#5a7a94] uppercase">RACHA ACTIVA</div>
-                    <div className="font-sora text-lg font-semibold mt-0.5">7 días</div>
+                    <div className="text-[10px] text-[#5a7a94] uppercase">RESPIRACIÓN</div>
+                    <div className="font-sora text-sm font-semibold mt-0.5">Guía 4-7-8</div>
                   </div>
                   <div className="bg-[#04152b] rounded-lg p-3">
-                    <div className="text-[10px] text-[#5a7a94] uppercase">RIESGO BURNOUT</div>
-                    <div className="font-sora text-sm font-semibold mt-0.5 text-[#97c459]">Muy bajo</div>
+                    <div className="text-[10px] text-[#5a7a94] uppercase">DIARIO</div>
+                    <div className="font-sora text-sm font-semibold mt-0.5 text-[#97c459]">Reflexión</div>
                   </div>
                 </div>
               </div>
@@ -169,22 +192,22 @@ export default function AnsioffBusinessLanding() {
             {/* RRHH */}
             <div className="bg-[#04152b] border border-[#0e2a4a] rounded-2xl p-8">
               <span className="bg-[#1f1200] text-[#ef9f27] text-[10px] font-bold px-2.5 py-1 rounded border border-[#854f0b] tracking-[0.5px]">RRHH / ADMIN</span>
-              <h3 className="font-sora text-base font-semibold mt-3 mb-1.5">Dashboard de inteligencia corporativa</h3>
-              <p className="text-[13px] text-[#5a7a94] mb-4">ROI financiero, heatmap de estrés, métricas de adopción por equipo y sede.</p>
+              <h3 className="font-sora text-base font-semibold mt-3 mb-1.5">Panel de bienestar laboral para RRHH</h3>
+              <p className="text-[13px] text-[#5a7a94] mb-4">Métricas agregadas de uso y adopción para entender qué recursos utiliza el equipo y orientar acciones de bienestar.</p>
               
               <div className="bg-[#020e1c] rounded-xl p-5 mt-4">
-                <div className="text-[10px] font-bold tracking-[1.5px] uppercase text-[#ef9f27] mb-3">CORPORATE INTELLIGENCE</div>
+                <div className="text-[10px] font-bold tracking-[1.5px] uppercase text-[#ef9f27] mb-3">VISIÓN AGREGADA PARA RRHH</div>
                 <div className="grid grid-cols-2 gap-2">
                   <div className="bg-[#04152b] rounded-lg p-3">
-                    <div className="font-sora text-[22px] font-semibold text-[#3b8ee8]">1</div>
-                    <div className="text-[10px] text-[#5a7a94]">Empresas activas</div>
+                    <div className="font-sora text-base font-semibold text-[#3b8ee8]">Uso</div>
+                    <div className="text-[10px] text-[#5a7a94]">Adopción del equipo</div>
                   </div>
                   <div className="bg-[#04152b] rounded-lg p-3">
-                    <div className="font-sora text-[22px] font-semibold text-[#3b8ee8]">92.4%</div>
-                    <div className="text-[10px] text-[#5a7a94]">Eficacia operativa</div>
+                    <div className="font-sora text-base font-semibold text-[#3b8ee8]">Tendencias</div>
+                    <div className="text-[10px] text-[#5a7a94]">Recursos utilizados</div>
                   </div>
                 </div>
-                <div className="text-[10px] text-[#5a7a94] mt-3 mb-1.5">STRESS PEAKS · HOY</div>
+                <div className="text-[10px] text-[#5a7a94] mt-3 mb-1.5">ACTIVIDAD AGREGADA · EJEMPLO</div>
                 <div className="grid grid-cols-5 gap-1">
                   {[0.1, 0.3, 0.5, 0.3, 0.1, 0.2, 0.8, 0.5, 0.3, 0.1].map((v, i) => (
                     <div key={i} className="h-5 rounded-[3px]" style={{ backgroundColor: i === 6 ? '#3b8ee8' : i === 2 || i === 7 ? '#185FA5' : i === 1 || i === 3 || i === 8 ? '#0c2d4e' : '#04152b' }}></div>
@@ -199,19 +222,19 @@ export default function AnsioffBusinessLanding() {
       {/* MODULOS (Biofeedback replaced with Respiración) */}
       <section id="modulos" className="bg-[#030f1f] py-20 px-6 border-b border-[#0e2a4a]">
         <div className="max-w-5xl mx-auto">
-          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">Módulos clínicos</div>
-          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">No es meditación. Es terapia.</h2>
-          <p className="text-[15px] text-[#5a7a94] mb-12">9 módulos basados en protocolos clínicos reales, no en contenido de bienestar genérico.</p>
+          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">HERRAMIENTAS DE SALUD MENTAL EN EL TRABAJO</div>
+          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Apoyo práctico para el estrés laboral y el bienestar diario</h2>
+          <p className="text-[15px] text-[#5a7a94] mb-12">Recursos breves para ayudar al equipo a hacer una pausa, regular el estrés y construir hábitos de autocuidado durante la jornada.</p>
           
           <div className="grid md:grid-cols-3 gap-3.5">
             {[
-              { name: "Pensamientos", desc: "Reestructuración cognitiva", tag: "CBT" },
-              { name: "Flexibilidad psicológica", desc: "Aceptación y compromiso", tag: "ACT" },
-              { name: "Respiración 4-7-8", desc: "Relajación diafragmática asistida", tag: "BREATHE" },
-              { name: "Audio neuro-acústico", desc: "Frecuencias Alpha y binaural", tag: "SOUND" },
+              { name: "Pensamientos", desc: "Preguntas de observación y reflexión", tag: "CBT" },
+              { name: "Flexibilidad psicológica", desc: "Ejercicios de aceptación y compromiso", tag: "ACT" },
+              { name: "Respiración 4-7-8", desc: "Respiración visual y temporizada", tag: "BREATHE" },
+              { name: "Sonidos relajantes", desc: "Paisajes sonoros para las pausas", tag: "SOUND" },
               { name: "Deep Work", desc: "Concentración profunda", tag: "FOCUS" },
-              { name: "Diario IA", desc: "Escritura terapéutica consciente", tag: "JOURNAL" },
-              { name: "Prevención burnout", desc: "Detección temprana algorítmica", tag: "RISK", tagColor: "#f09575", tagBorder: "#993c1d", tagBg: "#1f0800" },
+              { name: "Diario emocional", desc: "Registro y reflexión sobre emociones", tag: "JOURNAL" },
+              { name: "Prevención del burnout", desc: "Recursos de autocuidado y pausas", tag: "RISK", tagColor: "#f09575", tagBorder: "#993c1d", tagBg: "#1f0800" },
               { name: "Conciliación", desc: "Equilibrio vida-trabajo", tag: "LIFE" },
               { name: "Canal ético", desc: "Reporte anónimo y seguro", tag: "COMP" },
             ].map((m, i) => (
@@ -238,12 +261,36 @@ export default function AnsioffBusinessLanding() {
         </div>
       </section>
 
+      {/* BUSINESS SEO GUIDES */}
+      <section className="bg-[#020e1c] py-16 px-6 border-b border-[#0e2a4a]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">RECURSOS PARA EMPRESAS</div>
+          <h2 className="font-sora text-3xl md:text-[34px] font-semibold">Guías sobre salud mental y bienestar laboral</h2>
+          <p className="text-[15px] text-[#5a7a94] mt-3 max-w-3xl">Contenido para RRHH, prevención y dirección sobre bienestar, burnout, riesgos psicosociales y absentismo laboral.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            {[
+              { href: "/business/salud-mental-en-el-trabajo", label: "Salud mental en el trabajo" },
+              { href: "/business/bienestar-laboral", label: "Bienestar laboral" },
+              { href: "/business/burnout-laboral", label: "Burnout laboral" },
+              { href: "/business/riesgos-psicosociales", label: "Riesgos psicosociales en el trabajo" },
+              { href: "/business/absentismo-laboral", label: "Absentismo laboral" },
+              { href: "/business/beneficios-para-empleados", label: "Beneficios para empleados" },
+            ].map((guide) => (
+              <Link key={guide.href} href={guide.href} className="bg-[#04152b] border border-[#0e2a4a] rounded-xl p-5 hover:border-[#3b8ee8]/40 transition-colors">
+                <h3 className="font-sora text-sm font-semibold text-[#85b7eb]">{guide.label}</h3>
+                <p className="text-xs leading-relaxed text-[#5a7a94] mt-2">Información práctica y límites claros para una implantación responsable.</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PRICING */}
       <section id="pricing" className="bg-[#030f1f] py-20 px-6 border-b border-[#0e2a4a]">
         <div className="max-w-5xl mx-auto">
-          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">Pricing</div>
-          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Precio por empleado/mes.</h2>
-          <p className="text-[15px] text-[#5a7a94] mb-12">Cuanto más crece tu equipo, menos pagas. Sin permanencia. Alta en 24h.</p>
+          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">PLANES DE BIENESTAR PARA EMPRESAS</div>
+          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Precio claro por empleado y mes</h2>
+          <p className="text-[15px] text-[#5a7a94] mb-12">Elige un plan según el tamaño de tu equipo. Sin permanencia y con onboarding incluido.</p>
           
           <div className="grid md:grid-cols-3 gap-5">
             {/* STARTER */}
@@ -256,7 +303,7 @@ export default function AnsioffBusinessLanding() {
               </div>
               <hr className="border-[#0e2a4a] my-4" />
               <div className="space-y-2.5 mb-8">
-                {["9 módulos clínicos completos", "Respiración 4-7-8 guiada", "Dashboard RRHH", "Informe mensual", "Soporte email"].map((f, i) => (
+                {["9 módulos de bienestar", "Respiración 4-7-8 guiada", "Panel para RRHH", "Informe mensual", "Soporte por email"].map((f, i) => (
                   <div key={i} className="text-[13px] text-[#8ab0cc] flex gap-2">
                     <span className="text-[#3b8ee8]">·</span> {f}
                   </div>
@@ -280,7 +327,7 @@ export default function AnsioffBusinessLanding() {
               </div>
               <hr className="border-[#0e2a4a] my-4" />
               <div className="space-y-2.5 mb-8">
-                {["Todo lo de Starter", "ROI financiero en tiempo real", "Heatmap de estrés predictivo", "Canal ético + NOM-035", "Focus League por equipos", "Soporte prioritario"].map((f, i) => (
+                {["Todo lo de Starter", "Métricas agregadas de adopción", "Tendencias de uso", "Canal ético para el equipo", "Focus League por equipos", "Soporte prioritario"].map((f, i) => (
                   <div key={i} className="text-[13px] text-[#8ab0cc] flex gap-2">
                     <span className="text-[#3b8ee8]">·</span> {f}
                   </div>
@@ -319,9 +366,9 @@ export default function AnsioffBusinessLanding() {
       {/* DEMO / CONTACT */}
       <section id="demo" className="bg-[#04152b] py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">Demo</div>
-          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">¿Listo para verlo en acción?</h2>
-          <p className="text-[15px] text-[#5a7a94] mb-10">Te mostramos la plataforma completa adaptada a tu empresa. Sin compromiso.</p>
+          <div className="text-[11px] text-[#3b8ee8] font-bold tracking-[2px] uppercase mb-2 font-sora">DEMO DE BIENESTAR LABORAL</div>
+          <h2 className="font-sora text-3xl md:text-[34px] font-semibold mb-2">Descubre cómo ANSIOFF puede apoyar a tu equipo</h2>
+          <p className="text-[15px] text-[#5a7a94] mb-10">En una demo personalizada revisaremos las necesidades de tu empresa, la experiencia del empleado y las métricas disponibles para RRHH.</p>
           
           <form onSubmit={handleSubmit} className="bg-[#020e1c] border border-[#0e2a4a] rounded-2xl p-10 max-w-[560px] mx-auto text-left">
             {/* Honeypot field - Invisible for humans */}
@@ -381,7 +428,7 @@ export default function AnsioffBusinessLanding() {
               disabled={loading}
               className="w-full bg-[#185FA5] hover:bg-[#3b8ee8] text-[#e6f1fb] py-3.5 rounded-xl text-[15px] font-medium transition-all mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? "Enviando..." : "Solicitar demo gratuita"}
+              {loading ? "Enviando..." : "Solicitar demo de ANSIOFF Business"}
             </button>
             <p className="text-[12px] text-[#2d4a61] text-center mt-3">Respuesta en menos de 24h · Sin compromiso · Tus datos están protegidos bajo GDPR</p>
           </form>
@@ -393,9 +440,9 @@ export default function AnsioffBusinessLanding() {
         <div className="font-sora text-[15px] text-[#2d4a61]">ANSIOFF Business</div>
         <div className="text-[12px] text-[#2d4a61] flex flex-wrap justify-center gap-4">
           <span>© 2026 ANSIOFF</span>
-          <a href="#" className="hover:text-[#5a7a94]">Política de privacidad</a>
-          <a href="#" className="hover:text-[#5a7a94]">Aviso legal</a>
-          <a href="#" className="hover:text-[#5a7a94]">GDPR</a>
+          <Link href="/privacy" className="hover:text-[#5a7a94]">Política de privacidad</Link>
+          <Link href="/legal" className="hover:text-[#5a7a94]">Aviso legal</Link>
+          <Link href="/terms" className="hover:text-[#5a7a94]">Términos de servicio</Link>
         </div>
       </footer>
     </div>

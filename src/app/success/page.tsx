@@ -26,10 +26,10 @@ export default function SuccessPage() {
             <span className="text-4xl text-[#3b8ee8]">✓</span>
           </div>
           
-          <h1 className="font-sora text-3xl md:text-4xl font-semibold mb-4">¡Solicitud Recibida!</h1>
+          <h1 className="font-sora text-3xl md:text-4xl font-semibold mb-4">¡Solicitud recibida!</h1>
           <p className="text-[#8ab0cc] mb-10 leading-relaxed text-lg">
             Gracias por interesarte en <span className="text-[#e8f4ff] font-medium">ANSIOFF Business</span>. 
-            Un experto en bienestar organizacional se pondrá en contacto contigo en las próximas <span className="text-[#3b8ee8] font-semibold">24 horas</span> para agendar tu demo personalizada.
+            El equipo de ANSIOFF se pondrá en contacto contigo en las próximas <span className="text-[#3b8ee8] font-semibold">24 horas</span> para organizar tu demo personalizada.
           </p>
 
           <div className="space-y-4 mb-10">
@@ -46,7 +46,7 @@ export default function SuccessPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#3b8ee8] font-bold">3.</span>
-                  <span>Te daremos acceso temporal al Dashboard de RRHH para que lo explores.</span>
+                  <span>Te mostraremos la experiencia del empleado y las métricas disponibles para RRHH.</span>
                 </li>
               </ul>
             </div>

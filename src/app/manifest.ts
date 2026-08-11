@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'ANSIOFF',
     short_name: 'ANSIOFF',
-    description: 'La ansiedad no tiene que controlarte. Tu compañero para los momentos difíciles.',
+    description: 'App para la ansiedad con Kit SOS, respiración guiada, diario emocional y sonidos relajantes.',
     start_url: '/',
     display: 'standalone',
     background_color: '#060b18',

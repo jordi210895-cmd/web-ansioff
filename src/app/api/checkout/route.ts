@@ -43,15 +43,15 @@ export async function POST(req: Request) {
 
     console.log("Checkout session created successfully:", session.id);
     return NextResponse.json({ url: session.url });
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Unknown Stripe error";
     console.error("Stripe Checkout Error:", {
-      message: err.message,
-      type: err.type,
-      code: err.code
+      message,
+      error: err,
     });
     return NextResponse.json({ 
       error: "Error al crear la sesión de pago",
-      details: err.message 
+      details: message
     }, { status: 500 });
   }
 }

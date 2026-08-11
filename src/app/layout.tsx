@@ -1,5 +1,6 @@
 import { Sora, DM_Sans } from "next/font/google";
-import Script from "next/script";
+import type { Metadata } from "next";
+import AnalyticsConsent from "@/components/analytics-consent";
 import "./globals.css";
 
 const sora = Sora({
@@ -12,9 +13,38 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
-export const metadata = {
-  title: "ANSIOFF Business — Salud Mental Corporativa",
-  description: "La única plataforma que combina terapia clínica real para empleados con un dashboard de ROI para RRHH. Datos, no promesas.",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ansioff.com"),
+  title: "App para la ansiedad: respiración y diario | ANSIOFF",
+  description:
+    "Calma la ansiedad con respiración guiada, Kit SOS, diario emocional y sonidos relajantes. Descarga ANSIOFF para iPhone en la App Store.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "/",
+    siteName: "ANSIOFF",
+    title: "App para la ansiedad: respiración y diario | ANSIOFF",
+    description:
+      "Respiración guiada, Kit SOS, diario emocional y sonidos relajantes para afrontar momentos de ansiedad y estrés desde tu iPhone.",
+    images: [
+      {
+        url: "/icon-512.png",
+        width: 512,
+        height: 512,
+        alt: "ANSIOFF, app para la ansiedad en iPhone",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "App para la ansiedad: respiración y diario | ANSIOFF",
+    description:
+      "Kit SOS, respiración guiada, diario emocional y sonidos relajantes en tu iPhone.",
+    images: ["/icon-512.png"],
+  },
   verification: {
     google: "iWzifyqtckncXrB80nz_lcA6kOyhmuU7rnPwoxgIwiQ",
   },
@@ -23,7 +53,7 @@ export const metadata = {
   },
   appleWebApp: {
     capable: true,
-    title: "ANSIOFF Business",
+    title: "ANSIOFF",
     statusBarStyle: "black-translucent",
   },
   icons: {
@@ -40,31 +70,25 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        {/* Google AdSense direct raw tag */}
         <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4114551490468306"
-          crossOrigin="anonymous"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "ANSIOFF",
+              url: "https://ansioff.com",
+              logo: "https://ansioff.com/icon-512.png",
+              email: "ansioffapp@gmail.com",
+            }),
+          }}
         />
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18311870973"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'AW-18311870973');
-          `}
-        </Script>
       </head>
       <body
         className={`${sora.variable} ${dmSans.variable} font-sans antialiased`}
       >
         {children}
+        <AnalyticsConsent />
       </body>
     </html>
   );
