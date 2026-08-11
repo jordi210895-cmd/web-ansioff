@@ -14,6 +14,21 @@ export type BlogPostSummary = {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "diario-emocional-ejemplo",
+    category: "Diario emocional",
+    keyword: "diario emocional ejemplo",
+    title: "Diario emocional: ejemplo completo y qué escribir paso a paso",
+    seoTitle: "Diario emocional: ejemplo y plantilla | ANSIOFF",
+    description:
+      "Consulta un ejemplo de diario emocional, una plantilla sencilla y preguntas concretas para registrar situación, emoción, pensamiento y respuesta.",
+    excerpt:
+      "Un ejemplo rellenado y una plantilla práctica para empezar a observar emociones y pensamientos sin convertir el diario en una obligación.",
+    publishedAt: "2026-08-11",
+    modifiedAt: "2026-08-11",
+    displayDate: "11 de agosto de 2026",
+    readingTime: "9 min de lectura",
+  },
+  {
     slug: "tecnica-5-4-3-2-1-ansiedad",
     category: "Técnicas de anclaje",
     keyword: "técnica 5 4 3 2 1 ansiedad",

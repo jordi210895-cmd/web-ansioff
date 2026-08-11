@@ -399,10 +399,10 @@ export default function AnxietyOnWakingArticle() {
                 text: "Una guía visual para practicar sin forzar el aire ni los tiempos.",
               },
               {
-                href: "/diario-emocional",
+                href: "/blog/diario-emocional-ejemplo",
                 label: "Diario emocional",
-                title: "Qué escribir para observar patrones",
-                text: "Una estructura sencilla para registrar situación, emoción y pensamiento.",
+                title: "Ejemplo y plantilla de diario emocional",
+                text: "Aprende qué escribir con una entrada completa y una plantilla reutilizable.",
               },
             ].map((related) => (
               <Link key={related.href} href={related.href} className="rounded-2xl border border-[#0e2a4a] bg-[#020e1c] p-6 hover:border-[#14b8a6]/50">

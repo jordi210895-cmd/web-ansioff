@@ -52,12 +52,26 @@ URL incorporada: `/blog/ansiedad-al-despertar`
 
 URL incorporada: `/blog/tecnica-5-4-3-2-1-ansiedad`
 
+## Cuarto artículo seleccionado
+
+| Consulta | Búsquedas mensuales | Competencia Ads | Uso |
+|---|---:|---|---|
+| diario emocional ejemplo | 30 | Baja | Keyword principal, URL, title, H1 y ejemplo rellenado |
+| cómo hacer un diario emocional | 20 | Media | Explicación paso a paso |
+| plantilla diario emocional | 20 | Baja | Plantilla textual reutilizable |
+| diario de emociones ejemplo | 10 | Baja | Variante secundaria |
+| como empezar un diario emocional | 10 | Alta | Apertura y FAQ |
+| que escribir en un diario de emociones | 10 | Baja | Preguntas para desbloquear la escritura |
+| ejemplo de diario emocional | 10 | Baja | Variante secundaria natural |
+| diario emocional plantilla | 10 | Alta | Sección práctica, sin ofrecer un PDF inexistente |
+
+URL incorporada: `/blog/diario-emocional-ejemplo`
+
 ## Próximas oportunidades confirmadas
 
 | Tema propuesto | Keyword validada | Búsquedas mensuales | Enfoque para evitar canibalización |
 |---|---|---:|---|
 | Respiración y sueño | respiración para dormir | 720 | Comparar ritmos y crear una rutina nocturna; enlazar a 4-7-8 |
-| Ejemplo de diario | diario emocional ejemplo | 30 | Plantilla práctica y ejemplo no clínico |
 | Miedo a salir | miedo a salir de casa por ansiedad | 70 | Primeros pasos y exposición gradual sin sustituir terapia |
 | Ansiedad nocturna | remedios para la ansiedad nocturna | 50 | Reformular como hábitos y recursos; evitar promesas de “remedios” |
 | Ansiedad e insomnio | ansiedad e insomnio qué hacer | 20 | Cuándo es puntual, rutina y consulta profesional |

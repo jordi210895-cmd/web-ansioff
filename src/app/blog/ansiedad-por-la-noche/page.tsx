@@ -368,10 +368,10 @@ export default function AnxietyAtNightArticle() {
                 text: "Vuelve al presente con los cinco sentidos y aprende a adaptar cada paso.",
               },
               {
-                href: "/diario-emocional",
+                href: "/blog/diario-emocional-ejemplo",
                 label: "Diario emocional",
-                title: "Qué escribir para observar patrones",
-                text: "Una estructura sencilla para registrar situación, emoción y pensamiento.",
+                title: "Ejemplo y plantilla de diario emocional",
+                text: "Aprende qué escribir con una entrada completa y una plantilla reutilizable.",
               },
             ].map((related) => (
               <Link key={related.href} href={related.href} className="rounded-2xl border border-[#0e2a4a] bg-[#020e1c] p-6 hover:border-[#14b8a6]/50">
