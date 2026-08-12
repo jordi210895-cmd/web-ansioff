@@ -23,6 +23,10 @@ interface FeatureTab {
 
 const faqItems = [
   {
+    q: "¿Cómo se utiliza ANSIOFF en el día a día?",
+    a: "ANSIOFF se utiliza de forma muy sencilla: mantén la app a mano en tu iPhone y activa el Kit SOS si sientes ansiedad o pánico repentino; usa el respirador 4-7-8 para pausas de calma física; escribe en el diario emocional con IA antes de dormir para ordenar tus pensamientos; y reproduce sonidos relajantes mientras trabajas o descansas.",
+  },
+  {
     q: "¿Cómo puede ayudarme una app para la ansiedad?",
     a: "Una app para la ansiedad puede ayudarte a tener a mano ejercicios de respiración, pautas de anclaje y un espacio para registrar cómo te sientes. ANSIOFF reúne estas herramientas de bienestar en el iPhone, pero no diagnostica ni sustituye la atención de un profesional.",
   },
@@ -48,6 +52,54 @@ const faqItems = [
   },
 ];
 
+const howToSteps = [
+  {
+    num: "1",
+    title: "Kit SOS ante la ansiedad",
+    subtitle: "Pánico y momentos difíciles",
+    badge: "Emergencia",
+    desc: "Abre la app y pulsa el botón SOS. Sigue la secuencia rápida de respiración asistida 4-7-8 y el anclaje sensorial (5-4-3-2-1) para recuperar la calma sin rodeos.",
+    img: "/app-screens/sos.png",
+    accent: "#f87171",
+  },
+  {
+    num: "2",
+    title: "Respiración 4-7-8 y calmo",
+    subtitle: "Regulación fisiológica",
+    badge: "Pausas de calma",
+    desc: "Selecciona tu ejercicio (4-7-8, Caja o Coherente) y sigue la esfera en pantalla: inhala al expandirse, retén y exhala despacio al contraerse.",
+    img: "/app-screens/breathing.png",
+    accent: "#14b8a6",
+  },
+  {
+    num: "3",
+    title: "Diario Emocional con IA",
+    subtitle: "Reencuadre de pensamientos",
+    badge: "CBT / ACT",
+    desc: "Escribe cómo te sientes. La Inteligencia Artificial analiza distorsiones cognitivas (como el catastrofismo) y te sugiere preguntas para ganar perspectiva.",
+    img: "/app-screens/diary_ai.png",
+    accent: "#a78bfa",
+  },
+  {
+    num: "4",
+    title: "Sonidos Relajantes",
+    subtitle: "Paisajes de audio binaural",
+    badge: "Neuroacústica",
+    desc: "Elige lluvias, frecuencias 432Hz o sonidos de naturaleza. Ponlos de fondo durante tus pausas, estudio o rutina para dormir.",
+    img: "/app-screens/sounds.png",
+    accent: "#60a5fa",
+  },
+  {
+    num: "5",
+    title: "Programas Guiados",
+    subtitle: "Cursos de 5 min al día",
+    badge: "Terapia paso a paso",
+    desc: "Sigue lecciones breves inspiradas en CBT y ACT para aprender a gestionar el estrés, soltar la exigencia y crear hábitos duraderos.",
+    img: "/app-screens/modules.png",
+    accent: "#fb923c",
+  },
+];
+
 export default function AnsioffPersonalLanding() {
   // States for Breathing Simulator
   const [breatheState, setBreatheState] = useState<"idle" | "inhale" | "hold" | "exhale">("idle");
@@ -55,6 +107,9 @@ export default function AnsioffPersonalLanding() {
 
   // States for Interactive Phone Showcase
   const [activeTab, setActiveTab] = useState<TabId>("sos");
+
+  // State for How to Use step selector
+  const [activeHowTo, setActiveHowTo] = useState(0);
 
   // States for FAQ Accordion
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -68,13 +123,13 @@ export default function AnsioffPersonalLanding() {
         if (prev <= 1) {
           if (breatheState === "inhale") {
             setBreatheState("hold");
-            return 7; // Hold for 7 seconds
+            return 7;
           } else if (breatheState === "hold") {
             setBreatheState("exhale");
-            return 8; // Exhale for 8 seconds
+            return 8;
           } else {
             setBreatheState("inhale");
-            return 4; // Inhale for 4 seconds
+            return 4;
           }
         }
         return prev - 1;
@@ -99,11 +154,6 @@ export default function AnsioffPersonalLanding() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
-
-  // Feature tabs data with their respective screenshots from public/app-screens/ (biofeedback removed)
   const features: FeatureTab[] = [
     {
       id: "sos",
@@ -203,6 +253,10 @@ export default function AnsioffPersonalLanding() {
     }
   };
 
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
   return (
     <div className="bg-[#020e1c] text-[#e8f4ff] font-sans leading-relaxed selection:bg-[#14b8a6]/30 min-h-screen">
       <script
@@ -245,7 +299,6 @@ export default function AnsioffPersonalLanding() {
             ANSI<span className="text-[#14b8a6]">OFF</span>
           </Link>
           
-          {/* Segment Toggle */}
           <div className="flex bg-[#020e1c] rounded-full p-0.5 border border-[#0e2a4a] text-[11px] font-medium">
             <span className="px-2.5 py-0.5 rounded-full bg-[#14b8a6] text-[#020e1c] font-semibold">
               Para ti
@@ -258,8 +311,9 @@ export default function AnsioffPersonalLanding() {
             </Link>
           </div>
         </div>
-        <ul className="hidden md:flex items-center gap-8 text-sm text-[#8ab0cc]">
+        <ul className="hidden md:flex items-center gap-7 text-sm text-[#8ab0cc]">
           <li><button onClick={() => scrollTo('features')} className="hover:text-[#e8f4ff] transition-colors">Características</button></li>
+          <li><button onClick={() => scrollTo('como-usar')} className="hover:text-[#e8f4ff] transition-colors font-medium text-[#14b8a6]">¿Cómo se usa?</button></li>
           <li><button onClick={() => scrollTo('breathe')} className="hover:text-[#e8f4ff] transition-colors">Cómo funciona</button></li>
           <li><button onClick={() => scrollTo('screens')} className="hover:text-[#e8f4ff] transition-colors">Pantallas</button></li>
           <li><button onClick={() => scrollTo('faq')} className="hover:text-[#e8f4ff] transition-colors">Preguntas</button></li>
@@ -274,12 +328,10 @@ export default function AnsioffPersonalLanding() {
 
       {/* HERO */}
       <section className="bg-[#04152b] py-20 lg:py-28 px-6 border-b border-[#0e2a4a] relative overflow-hidden">
-        {/* Glow gradients */}
         <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] bg-[#14b8a6]/10 blur-[100px] rounded-full pointer-events-none"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#3b8ee8]/10 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
-          {/* Hero text */}
           <div className="lg:col-span-7 text-left">
             <div className="inline-flex items-center gap-2 bg-[#0d2d3e] text-[#4ddbc4] text-[11px] font-medium px-4 py-1.5 rounded-full mb-6 border border-[#14b8a6]/30 tracking-[0.8px] font-sora">
               <span className="w-1.5 h-1.5 rounded-full bg-[#14b8a6] animate-pulse"></span>
@@ -292,7 +344,6 @@ export default function AnsioffPersonalLanding() {
               Respiración guiada, Kit SOS, diario emocional y sonidos relajantes para afrontar momentos de ansiedad y estrés. Lleva herramientas de calma siempre contigo en tu iPhone.
             </p>
             
-            {/* Download Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6">
               <div className="flex flex-col gap-3">
                 <AppStoreLink
@@ -312,13 +363,10 @@ export default function AnsioffPersonalLanding() {
             </div>
           </div>
 
-          {/* Hero mockup */}
           <div className="lg:col-span-5 flex justify-center relative">
-            {/* Soft decorative glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#14b8a6]/20 blur-[80px] rounded-full pointer-events-none"></div>
 
             <div className="relative w-[280px] sm:w-[320px] aspect-[9/18.5] bg-[#020e1c] rounded-[42px] border-[8px] border-[#0e2a4a] shadow-[0_25px_60px_-15px_rgba(2,14,28,0.9)] overflow-hidden flex flex-col">
-              {/* Dynamic screen image */}
               <Image
                 src="/app-screens/main.png"
                 alt="Pantalla principal de ANSIOFF, app para la ansiedad"
@@ -327,14 +375,12 @@ export default function AnsioffPersonalLanding() {
                 sizes="(max-width: 640px) 280px, 320px"
                 className="object-cover select-none"
               />
-              {/* Phone Camera Notch */}
               <div className="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-4.5 bg-[#0e2a4a] rounded-full flex items-center justify-center">
                 <div className="w-2.5 h-2.5 rounded-full bg-black/40 mr-12"></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-[#1e3d5c]"></div>
               </div>
             </div>
 
-            {/* Floating Card 1 (Biofeedback replaced with SOS) */}
             <div className="absolute -left-6 bottom-16 bg-[#041d38]/90 border border-[#14b8a6]/30 backdrop-blur-md rounded-2xl p-4 shadow-xl max-w-[170px] animate-bounce-slow">
               <div className="flex items-center gap-2 mb-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#14b8a6] animate-ping"></span>
@@ -344,7 +390,6 @@ export default function AnsioffPersonalLanding() {
               <div className="text-[10px] text-[#5a7a94] mt-0.5">Respiración y anclaje sensorial</div>
             </div>
 
-            {/* Floating Card 2 */}
             <div className="absolute -right-6 top-16 bg-[#041d38]/90 border border-[#3b8ee8]/30 backdrop-blur-md rounded-2xl p-4 shadow-xl max-w-[170px]">
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-base">🧘</span>
@@ -357,7 +402,7 @@ export default function AnsioffPersonalLanding() {
         </div>
       </section>
 
-      {/* STATS / VALIDATION BAR */}
+      {/* STATS BAR */}
       <div className="grid grid-cols-2 md:grid-cols-4 bg-[#020e1c] border-b border-[#0e2a4a]">
         {[
           { n: "Kit SOS", l: "Guía paso a paso para momentos difíciles" },
@@ -382,7 +427,6 @@ export default function AnsioffPersonalLanding() {
           </div>
 
           <div className="grid lg:grid-cols-12 gap-8 items-center">
-            {/* Left side tabs */}
             <div className="lg:col-span-7 space-y-3">
               {features.map((feat) => {
                 const isActive = activeTab === feat.id;
@@ -423,20 +467,16 @@ export default function AnsioffPersonalLanding() {
               </Link>
             </div>
 
-            {/* Right side active mockup */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-[260px] md:w-[280px] aspect-[9/18.5] bg-[#020e1c] rounded-[38px] border-[6px] border-[#0e2a4a] shadow-2xl overflow-hidden transition-all duration-500">
-                {/* Dynamically switched screen */}
                 <Image
                   src={activeFeature.img}
                   alt={activeFeature.title}
                   fill
                   sizes="(max-width: 768px) 260px, 280px"
                   className="object-cover select-none animate-scaleIn"
-                  key={activeTab} // triggers re-render animation when activeTab changes
+                  key={activeTab}
                 />
-                
-                {/* Phone Notch */}
                 <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-4 bg-[#0e2a4a] rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 rounded-full bg-black/40 mr-10"></div>
                   <div className="w-1 h-1 rounded-full bg-[#1e3d5c]"></div>
@@ -447,24 +487,124 @@ export default function AnsioffPersonalLanding() {
         </div>
       </section>
 
+      {/* NEW SECTION: ¿CÓMO SE UTILIZA ANSIOFF? */}
+      <section id="como-usar" className="bg-[#020e1c] py-20 lg:py-28 px-6 border-b border-[#0e2a4a] relative">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 bg-[#0d2d3e] text-[#14b8a6] text-[11px] font-bold px-4 py-1.5 rounded-full mb-3 border border-[#14b8a6]/30 tracking-[1.5px] uppercase font-sora">
+              <span>💡</span> GUÍA DE USO
+            </div>
+            <h2 className="font-sora text-3xl md:text-4xl font-semibold mb-4">
+              ¿Cómo se utiliza <span className="text-[#14b8a6]">ANSIOFF</span>?
+            </h2>
+            <p className="text-[15px] text-[#8ab0cc]">
+              ANSIOFF reúne 5 herramientas de calma en una sola app fácil e intuitiva. Haz clic en cada función para descubrir exactamente cómo utilizarla paso a paso.
+            </p>
+          </div>
+
+          {/* Interactive Steps Selector */}
+          <div className="grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-7 space-y-3">
+              {howToSteps.map((step, idx) => {
+                const isSelected = activeHowTo === idx;
+                return (
+                  <div
+                    key={idx}
+                    onClick={() => setActiveHowTo(idx)}
+                    className={`cursor-pointer p-5 rounded-2xl border transition-all duration-300 ${
+                      isSelected
+                        ? "bg-[#04152b] border-[#14b8a6]/50 shadow-xl"
+                        : "bg-[#04152b]/40 border-[#0e2a4a] hover:border-[#14b8a6]/20"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <span
+                          className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold font-sora"
+                          style={{
+                            backgroundColor: isSelected ? step.accent : "rgba(14, 42, 74, 0.6)",
+                            color: isSelected ? "#020e1c" : "#8ab0cc",
+                          }}
+                        >
+                          {step.num}
+                        </span>
+                        <div>
+                          <h3 className="font-sora text-base font-semibold text-[#e8f4ff]">
+                            {step.title}
+                          </h3>
+                          <span className="text-xs text-[#5a7a94]">{step.subtitle}</span>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#020e1c] border border-[#0e2a4a] text-[#8ab0cc]">
+                        {step.badge}
+                      </span>
+                    </div>
+
+                    {isSelected && (
+                      <div className="mt-4 pt-3 border-t border-[#0e2a4a] animate-fadeIn">
+                        <p className="text-xs text-[#8ab0cc] leading-relaxed mb-3">
+                          {step.desc}
+                        </p>
+                        <Link
+                          href="/como-usar-ansioff"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#14b8a6] hover:text-[#4ddbc4]"
+                        >
+                          Ver guía completa paso a paso →
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Active Phone Preview for How To */}
+            <div className="lg:col-span-5 flex flex-col items-center">
+              <div className="relative w-[260px] md:w-[280px] aspect-[9/18.5] bg-[#020e1c] rounded-[38px] border-[6px] border-[#0e2a4a] shadow-2xl overflow-hidden">
+                <Image
+                  src={howToSteps[activeHowTo].img}
+                  alt={howToSteps[activeHowTo].title}
+                  fill
+                  sizes="(max-width: 768px) 260px, 280px"
+                  className="object-cover select-none animate-fadeIn"
+                  key={activeHowTo}
+                />
+                <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-4 bg-[#0e2a4a] rounded-full flex items-center justify-center">
+                  <div className="w-2 h-2 rounded-full bg-black/40 mr-10"></div>
+                  <div className="w-1 h-1 rounded-full bg-[#1e3d5c]"></div>
+                </div>
+              </div>
+              <div className="mt-4 text-center">
+                <Link
+                  href="/como-usar-ansioff"
+                  className="text-xs font-semibold text-[#8ab0cc] hover:text-[#14b8a6] transition-colors underline decoration-[#14b8a6]/40 underline-offset-4"
+                >
+                  ¿Quieres leer el manual completo de uso? Haz clic aquí
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SEO TOOL GUIDES */}
-      <section className="bg-[#020e1c] py-16 px-6 border-b border-[#0e2a4a]">
+      <section className="bg-[#04152b] py-16 px-6 border-b border-[#0e2a4a]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center max-w-2xl mx-auto">
-            <div className="text-[11px] text-[#14b8a6] font-bold tracking-[2px] uppercase mb-2 font-sora">GUÍAS DE ANSIOFF</div>
+            <div className="text-[11px] text-[#14b8a6] font-bold tracking-[2px] uppercase mb-2 font-sora">GUÍAS Y MANUALES</div>
             <h2 className="font-sora text-3xl font-semibold">Aprende a utilizar cada herramienta de calma</h2>
-            <p className="text-sm text-[#8ab0cc] mt-4">Consulta guías prácticas sobre respiración para la ansiedad, diario emocional, sonidos relajantes y el Kit SOS.</p>
+            <p className="text-sm text-[#8ab0cc] mt-4">Consulta guías prácticas sobre respiración para la ansiedad, diario emocional, sonidos relajantes y el manual de la app.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             {[
+              { href: "/como-usar-ansioff", label: "¿Cómo usar la app?", text: "Manual paso a paso de todas las funciones de ANSIOFF." },
               { href: "/app-para-la-ansiedad", label: "App para la ansiedad", text: "Todas las herramientas de ANSIOFF en un solo lugar." },
               { href: "/respiracion-4-7-8", label: "Respiración 4-7-8", text: "Sigue el ritmo de inhalación, pausa y exhalación." },
               { href: "/respiracion-para-la-ansiedad", label: "Respiración para la ansiedad", text: "Ejercicios visuales para centrar la atención." },
               { href: "/diario-emocional", label: "Diario emocional", text: "Registra emociones, situaciones y pensamientos." },
-              { href: "/sonidos-relajantes", label: "Sonidos relajantes", text: "Audios para acompañar pausas y concentración." },
               { href: "/kit-sos-ansiedad", label: "Kit SOS para la ansiedad", text: "Una guía paso a paso para momentos difíciles." },
             ].map((guide) => (
-              <Link key={guide.href} href={guide.href} className="bg-[#04152b] border border-[#0e2a4a] rounded-xl p-5 hover:border-[#14b8a6]/40 transition-colors">
+              <Link key={guide.href} href={guide.href} className="bg-[#020e1c] border border-[#0e2a4a] rounded-xl p-5 hover:border-[#14b8a6]/40 transition-colors">
                 <h3 className="font-sora text-sm font-semibold text-[#14b8a6]">{guide.label}</h3>
                 <p className="text-xs leading-relaxed text-[#5a7a94] mt-2">{guide.text}</p>
               </Link>
@@ -475,7 +615,6 @@ export default function AnsioffPersonalLanding() {
 
       {/* HOW IT WORKS / BREATH SIMULATOR */}
       <section id="breathe" className="bg-[#030f1f] py-20 lg:py-28 px-6 border-b border-[#0e2a4a] relative overflow-hidden">
-        {/* Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-[#14b8a6]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -486,7 +625,6 @@ export default function AnsioffPersonalLanding() {
           </p>
 
           <div className="bg-[#020e1c] border border-[#0e2a4a] rounded-[32px] p-8 md:p-12 max-w-[580px] mx-auto shadow-xl">
-            {/* Dynamic Label & Instruction */}
             <div className="mb-8 min-h-[64px]">
               <div className="text-xs text-[#5a7a94] uppercase tracking-[1.5px] font-medium mb-1">
                 {breatheState === "idle" ? "PASO DE INICIO" : "FASE ACTUAL"}
@@ -499,7 +637,6 @@ export default function AnsioffPersonalLanding() {
               </p>
             </div>
 
-            {/* Breathing Bubble Display */}
             <div className="flex items-center justify-center py-8">
               <div 
                 className="w-36 h-36 rounded-full border-4 flex flex-col items-center justify-center relative transition-all"
@@ -512,7 +649,6 @@ export default function AnsioffPersonalLanding() {
                     : "transform 1000ms ease-in-out, border-color 1000ms, box-shadow 1000ms"
                 }}
               >
-                {/* Ring animation */}
                 {breatheState !== "idle" && (
                   <div className={`absolute inset-0 rounded-full border-2 border-current opacity-20 ${
                     breatheState === "hold" ? "animate-ping" : "animate-none"
@@ -534,7 +670,6 @@ export default function AnsioffPersonalLanding() {
               </div>
             </div>
 
-            {/* Controls */}
             <div className="mt-8">
               {breatheState === "idle" ? (
                 <button
@@ -553,7 +688,6 @@ export default function AnsioffPersonalLanding() {
               )}
             </div>
             
-            {/* Scientific Explanation Info */}
             <div className="mt-8 pt-6 border-t border-[#0e2a4a] grid grid-cols-3 gap-3 text-center">
               <div>
                 <div className="text-[10px] text-[#5a7a94] uppercase tracking-wider">Inhala</div>
@@ -581,7 +715,6 @@ export default function AnsioffPersonalLanding() {
             <p className="text-[14px] text-[#8ab0cc]">Explora el Kit SOS, los ejercicios de respiración, el diario emocional, los sonidos relajantes y el seguimiento de tu progreso.</p>
           </div>
 
-          {/* Horizontal scroll container with beautiful mobile frames (no biofeedback mention, breathing becomes pure breathing guide) */}
           <div className="flex gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-thumb-[#0e2a4a] scrollbar-track-transparent snap-x">
             {[
               { src: "/app-screens/main.png", title: "Pantalla principal", desc: "Acceso a tus herramientas de bienestar" },
@@ -620,7 +753,7 @@ export default function AnsioffPersonalLanding() {
           <div className="text-center mb-14">
             <div className="text-[11px] text-[#14b8a6] font-bold tracking-[2px] uppercase mb-2 font-sora">Soporte y dudas</div>
             <h2 className="font-sora text-3xl font-semibold mb-3">Preguntas Frecuentes</h2>
-            <p className="text-[14px] text-[#8ab0cc]">Resolvemos las dudas más frecuentes sobre la app para la ansiedad, el Kit SOS, la respiración 4-7-8 y el diario emocional.</p>
+            <p className="text-[14px] text-[#8ab0cc]">Resolvemos las dudas más frecuentes sobre la app para la ansiedad, cómo utilizar cada herramienta, el Kit SOS y el diario emocional.</p>
           </div>
 
           <div className="space-y-3">
@@ -649,9 +782,8 @@ export default function AnsioffPersonalLanding() {
         </div>
       </section>
 
-      {/* DOWNLOAD SECTION (CTA) - Google Play & APK completely removed */}
+      {/* DOWNLOAD SECTION (CTA) */}
       <section id="download" className="bg-[#04152b] py-20 lg:py-28 px-6 text-center relative overflow-hidden">
-        {/* Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#14b8a6]/5 blur-[140px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto relative z-10">
@@ -666,7 +798,6 @@ export default function AnsioffPersonalLanding() {
           </p>
 
           <div className="max-w-md mx-auto bg-[#020e1c] border border-[#0e2a4a] p-8 rounded-[32px]">
-            {/* App Store Link */}
             <div className="flex flex-col items-center text-center w-full">
               <span className="text-4xl mb-4">📱</span>
               <h3 className="font-sora text-lg font-semibold text-[#e8f4ff] mb-2">Descargar para iOS</h3>

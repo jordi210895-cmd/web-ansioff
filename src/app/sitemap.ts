@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 const routes = [
   "",
+  "/como-usar-ansioff",
   "/app-para-la-ansiedad",
   "/respiracion-4-7-8",
   "/respiracion-para-la-ansiedad",
@@ -33,12 +34,12 @@ const routes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-08-11");
+  const lastModified = new Date("2026-08-12");
 
   return routes.map((route) => ({
     url: `https://ansioff.com${route || "/"}`,
     lastModified,
     changeFrequency: route === "" || route === "/blog" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route === "/business" ? 0.9 : route === "/blog" ? 0.8 : 0.7,
+    priority: route === "" ? 1 : route === "/como-usar-ansioff" ? 0.9 : route === "/business" ? 0.9 : route === "/blog" ? 0.8 : 0.7,
   }));
 }
