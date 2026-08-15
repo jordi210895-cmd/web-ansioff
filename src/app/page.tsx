@@ -106,7 +106,7 @@ export default function AnsioffPersonalLanding() {
   const [timer, setTimer] = useState(0);
 
   // States for Interactive Phone Showcase
-  const [activeTab, setActiveTab] = useState<TabId>("sos");
+  const [activeTab, setActiveTab] = useState<TabId>("programas");
 
   // State for How to Use step selector
   const [activeHowTo, setActiveHowTo] = useState(0);
