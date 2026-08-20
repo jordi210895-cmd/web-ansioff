@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AppStoreLink from "@/components/app-store-link";
+import PlayStoreLink from "@/components/play-store-link";
 import SiteFooter from "@/components/site-footer";
 import {
   personalSeoPages,
@@ -137,14 +138,20 @@ export default async function PersonalSeoLanding({ params }: PageProps) {
               {page.h1}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#8ab0cc]">{page.intro}</p>
-            <div className="mt-9 flex flex-wrap items-center gap-4">
+            <div className="mt-9 flex flex-wrap items-center gap-3">
               <AppStoreLink
                 placement={`${page.slug}_hero`}
-                className="rounded-xl bg-[#14b8a6] px-7 py-3.5 text-sm font-semibold text-[#020e1c] hover:bg-[#0d9488]"
+                className="rounded-xl bg-[#14b8a6] px-6 py-3.5 text-sm font-semibold text-[#020e1c] hover:bg-[#0d9488]"
               >
-                 Descargar ANSIOFF para iPhone
+                 App Store (iOS)
               </AppStoreLink>
-              <span className="text-xs text-[#5a7a94]">Herramienta de bienestar · No sustituye atención profesional</span>
+              <PlayStoreLink
+                placement={`${page.slug}_hero`}
+                className="rounded-xl bg-[#0e2a4a] border border-[#14b8a6]/40 px-6 py-3.5 text-sm font-semibold text-[#e8f4ff] hover:bg-[#153a63]"
+              >
+                ▶ Google Play (Android)
+              </PlayStoreLink>
+              <span className="text-xs text-[#5a7a94] w-full mt-1">Herramienta de bienestar · No sustituye atención profesional</span>
             </div>
           </div>
 
@@ -220,14 +227,22 @@ export default async function PersonalSeoLanding({ params }: PageProps) {
       </div>
 
       <section className="border-t border-[#0e2a4a] bg-[#04152b] px-6 py-16 text-center">
-        <h2 className="font-sora text-3xl font-semibold">Lleva estas herramientas en tu iPhone</h2>
+        <h2 className="font-sora text-3xl font-semibold">Lleva estas herramientas en tu teléfono</h2>
         <p className="mx-auto mt-4 max-w-xl text-[#8ab0cc]">Descarga ANSIOFF y accede al Kit SOS, la respiración guiada, el diario emocional y los sonidos relajantes.</p>
-        <AppStoreLink
-          placement={`${page.slug}_final_cta`}
-          className="mt-8 inline-flex rounded-xl bg-[#14b8a6] px-7 py-3.5 text-sm font-semibold text-[#020e1c] hover:bg-[#0d9488]"
-        >
-           Descargar ANSIOFF en App Store
-        </AppStoreLink>
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <AppStoreLink
+            placement={`${page.slug}_final_cta`}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#14b8a6] px-7 py-3.5 text-sm font-semibold text-[#020e1c] hover:bg-[#0d9488] w-full sm:w-auto"
+          >
+             App Store (iOS)
+          </AppStoreLink>
+          <PlayStoreLink
+            placement={`${page.slug}_final_cta`}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0e2a4a] border border-[#14b8a6]/40 px-7 py-3.5 text-sm font-semibold text-[#e8f4ff] hover:bg-[#153a63] w-full sm:w-auto"
+          >
+            <span className="text-xs font-bold text-[#14b8a6]">▶</span> Google Play (Android)
+          </PlayStoreLink>
+        </div>
       </section>
 
       <SiteFooter />

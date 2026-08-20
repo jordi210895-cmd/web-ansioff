@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AppStoreLink from "@/components/app-store-link";
+import PlayStoreLink from "@/components/play-store-link";
 import SiteFooter from "@/components/site-footer";
 
 type TabId = "sos" | "diario" | "audios" | "programas";
@@ -24,11 +25,11 @@ interface FeatureTab {
 const faqItems = [
   {
     q: "¿Cómo se utiliza ANSIOFF en el día a día?",
-    a: "ANSIOFF se utiliza de forma muy sencilla: mantén la app a mano en tu iPhone y activa el Kit SOS si sientes ansiedad o pánico repentino; usa el respirador 4-7-8 para pausas de calma física; escribe en el diario emocional con IA antes de dormir para ordenar tus pensamientos; y reproduce sonidos relajantes mientras trabajas o descansas.",
+    a: "ANSIOFF se utiliza de forma muy sencilla: mantén la app a mano en tu teléfono y activa el Kit SOS si sientes ansiedad o pánico repentino; usa el respirador 4-7-8 para pausas de calma física; escribe en el diario emocional con IA antes de dormir para ordenar tus pensamientos; y reproduce sonidos relajantes mientras trabajas o descansas.",
   },
   {
     q: "¿Cómo puede ayudarme una app para la ansiedad?",
-    a: "Una app para la ansiedad puede ayudarte a tener a mano ejercicios de respiración, pautas de anclaje y un espacio para registrar cómo te sientes. ANSIOFF reúne estas herramientas de bienestar en el iPhone, pero no diagnostica ni sustituye la atención de un profesional.",
+    a: "Una app para la ansiedad puede ayudarte a tener a mano ejercicios de respiración, pautas de anclaje y un espacio para registrar cómo te sientes. ANSIOFF reúne estas herramientas de bienestar en tu móvil, pero no diagnostica ni sustituye la atención de un profesional.",
   },
   {
     q: "¿Qué incluye el Kit SOS de ANSIOFF?",
@@ -47,8 +48,8 @@ const faqItems = [
     a: "No. ANSIOFF es una herramienta de bienestar y apoyo para el día a día. No sustituye la evaluación, el diagnóstico ni el tratamiento de un psicólogo, psiquiatra u otro profesional sanitario.",
   },
   {
-    q: "¿ANSIOFF está disponible para Android?",
-    a: "Actualmente ANSIOFF está disponible para iPhone a través de la App Store de Apple. La versión para Android no está disponible en este momento.",
+    q: "¿ANSIOFF está disponible para Android e iPhone?",
+    a: "¡Sí! ANSIOFF ya está disponible tanto para Android en Google Play Store como para iPhone en la App Store de Apple.",
   },
 ];
 
@@ -341,22 +342,32 @@ export default function AnsioffPersonalLanding() {
               Tu app para <span className="text-[#14b8a6] drop-shadow-[0_0_15px_rgba(20,184,166,0.3)]">calmar la ansiedad</span> cuando más lo necesitas
             </h1>
             <p className="text-lg text-[#8ab0cc] mb-10 leading-[1.65] max-w-[580px]">
-              Respiración guiada, Kit SOS, diario emocional y sonidos relajantes para afrontar momentos de ansiedad y estrés. Lleva herramientas de calma siempre contigo en tu iPhone.
+              Respiración guiada, Kit SOS, diario emocional y sonidos relajantes para afrontar momentos de ansiedad y estrés. Lleva herramientas de calma siempre contigo en tu dispositivo iOS o Android.
             </p>
             
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-6">
               <div className="flex flex-col gap-3">
-                <AppStoreLink
-                  placement="home_hero"
-                  className="bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] px-8 py-3.5 rounded-xl text-[15px] font-semibold transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2.5"
-                >
-                  <span></span>
-                  Descargar ANSIOFF en App Store
-                </AppStoreLink>
+                <div className="flex flex-col sm:flex-row items-center gap-3">
+                  <AppStoreLink
+                    placement="home_hero"
+                    className="bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] px-6 py-3.5 rounded-xl text-[14px] font-semibold transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 w-full sm:w-auto"
+                  >
+                    <span className="text-base"></span>
+                    App Store (iOS)
+                  </AppStoreLink>
+
+                  <PlayStoreLink
+                    placement="home_hero"
+                    className="bg-[#0e2a4a] hover:bg-[#153a63] border border-[#14b8a6]/40 text-[#e8f4ff] px-6 py-3.5 rounded-xl text-[14px] font-semibold transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 w-full sm:w-auto"
+                  >
+                    <span className="text-xs font-bold text-[#14b8a6]">▶</span>
+                    Google Play (Android)
+                  </PlayStoreLink>
+                </div>
                 
                 <div className="flex items-center justify-center sm:justify-start gap-4 mt-1.5">
                   <span className="text-xs text-[#5a7a94] flex items-center gap-1">
-                    Disponible para iPhone · Herramienta de bienestar; no sustituye la atención profesional
+                    Disponible para iPhone y Android · Herramienta de bienestar; no sustituye la atención profesional
                   </span>
                 </div>
               </div>
@@ -408,7 +419,7 @@ export default function AnsioffPersonalLanding() {
           { n: "Kit SOS", l: "Guía paso a paso para momentos difíciles" },
           { n: "4-7-8", l: "Ejercicio visual de respiración temporizada" },
           { n: "Diario", l: "Registra emociones y observa patrones" },
-          { n: "iPhone", l: "Disponible directamente en la App Store" },
+          { n: "Multiplataforma", l: "Disponible en App Store y Google Play" },
         ].map((s, i) => (
           <div key={i} className="p-8 text-center border-r border-[#0e2a4a] last:border-r-0">
             <div className="font-sora text-3xl font-semibold text-[#14b8a6]">{s.n}</div>
@@ -791,24 +802,37 @@ export default function AnsioffPersonalLanding() {
             DESCARGA LA APP PARA LA ANSIEDAD
           </div>
           <h2 className="font-sora text-3xl md:text-5xl font-semibold mb-6 max-w-2xl mx-auto leading-tight">
-            Lleva ejercicios de respiración y calma en tu iPhone
+            Lleva ejercicios de respiración y calma en tu teléfono
           </h2>
           <p className="text-lg text-[#8ab0cc] mb-12 max-w-xl mx-auto leading-relaxed">
             Descarga ANSIOFF y accede al Kit SOS, la respiración guiada, el diario emocional y los sonidos relajantes desde un solo lugar.
           </p>
 
-          <div className="max-w-md mx-auto bg-[#020e1c] border border-[#0e2a4a] p-8 rounded-[32px]">
-            <div className="flex flex-col items-center text-center w-full">
-              <span className="text-4xl mb-4">📱</span>
-              <h3 className="font-sora text-lg font-semibold text-[#e8f4ff] mb-2">Descargar para iOS</h3>
-              <p className="text-sm text-[#8ab0cc] mb-6 max-w-[280px]">Haz clic en el enlace inferior para ir directamente a la App Store y descargar ANSIOFF en tu iPhone.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="bg-[#020e1c] border border-[#0e2a4a] p-8 rounded-[32px] flex flex-col items-center text-center">
+              <span className="text-4xl mb-4"></span>
+              <h3 className="font-sora text-lg font-semibold text-[#e8f4ff] mb-2">Descargar para iPhone</h3>
+              <p className="text-sm text-[#8ab0cc] mb-6 flex-grow">Descarga ANSIOFF en la App Store para tu iPhone o iPad.</p>
               
               <AppStoreLink
-                placement="home_final_cta"
-                className="px-8 py-3.5 rounded-xl bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] text-sm font-bold transition-all flex items-center justify-center gap-2"
+                placement="home_final_cta_ios"
+                className="w-full px-6 py-3.5 rounded-xl bg-[#14b8a6] hover:bg-[#0d9488] text-[#020e1c] text-sm font-bold transition-all flex items-center justify-center gap-2"
               >
-                <span></span> Descargar ANSIOFF para iPhone
+                <span></span> App Store (iOS)
               </AppStoreLink>
+            </div>
+
+            <div className="bg-[#020e1c] border border-[#0e2a4a] p-8 rounded-[32px] flex flex-col items-center text-center">
+              <span className="text-4xl mb-4">🤖</span>
+              <h3 className="font-sora text-lg font-semibold text-[#e8f4ff] mb-2">Descargar para Android</h3>
+              <p className="text-sm text-[#8ab0cc] mb-6 flex-grow">Consigue ANSIOFF en Google Play Store para tu dispositivo Android.</p>
+              
+              <PlayStoreLink
+                placement="home_final_cta_android"
+                className="w-full px-6 py-3.5 rounded-xl bg-[#0e2a4a] hover:bg-[#153a63] border border-[#14b8a6]/40 text-[#e8f4ff] text-sm font-bold transition-all flex items-center justify-center gap-2"
+              >
+                <span className="text-xs font-bold text-[#14b8a6]">▶</span> Google Play (Android)
+              </PlayStoreLink>
             </div>
           </div>
         </div>

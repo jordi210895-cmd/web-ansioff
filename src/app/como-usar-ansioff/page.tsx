@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AppStoreLink from "@/components/app-store-link";
+import PlayStoreLink from "@/components/play-store-link";
 import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
@@ -248,15 +249,21 @@ export default function ComoUsarPage() {
         <div className="mt-20 text-center">
           <h2 className="font-sora text-2xl font-semibold md:text-4xl">¿Listo para empezar a usar ANSIOFF?</h2>
           <p className="mx-auto mt-4 max-w-lg text-sm text-[#8ab0cc]">
-            Descarga la aplicación en tu iPhone y lleva contigo el Kit SOS, los ejercicios de respiración y tu diario emocional.
+            Descarga la aplicación en tu dispositivo iOS o Android y lleva contigo el Kit SOS, los ejercicios de respiración y tu diario emocional.
           </p>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <AppStoreLink
               placement="como_usar_footer_cta"
-              className="flex items-center gap-2.5 rounded-xl bg-[#14b8a6] px-8 py-3.5 font-sora text-sm font-semibold text-[#020e1c] transition-all hover:bg-[#0d9488] hover:-translate-y-0.5"
+              className="flex items-center justify-center gap-2.5 rounded-xl bg-[#14b8a6] px-8 py-3.5 font-sora text-sm font-semibold text-[#020e1c] transition-all hover:bg-[#0d9488] hover:-translate-y-0.5 w-full sm:w-auto"
             >
-              <span></span> Descargar ANSIOFF en el App Store
+              <span></span> App Store (iOS)
             </AppStoreLink>
+            <PlayStoreLink
+              placement="como_usar_footer_cta"
+              className="flex items-center justify-center gap-2.5 rounded-xl bg-[#0e2a4a] border border-[#14b8a6]/40 px-8 py-3.5 font-sora text-sm font-semibold text-[#e8f4ff] transition-all hover:bg-[#153a63] hover:-translate-y-0.5 w-full sm:w-auto"
+            >
+              <span className="text-xs font-bold text-[#14b8a6]">▶</span> Google Play (Android)
+            </PlayStoreLink>
           </div>
         </div>
       </main>
